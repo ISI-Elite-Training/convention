@@ -1,11 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 // ATELIER® DESIGN SYSTEM
 import { Box } from '@/system/box';
 import { Flex } from '@/system/flex';
 import { Text } from '@/system/text';
 import { NewLink } from '@/system/newlink';
+import brandLogo from '@/public/logo/logo.svg';
 
 // FUNCTIONS
 import { PopoverPanel } from '@/components/PopoverPanel';
@@ -34,27 +36,17 @@ export const Navbar = () => {
           <Box
             as="a"
             css={{
-              width: '100px',
+              width: 'auto',
               ml: '$2',
               display: 'inline-flex',
               textDecoration: 'none',
+              mixBlendMode: 'difference',
               '&:focus': {
                 boxShadow: 'none',
               },
               '@bp2': { ml: '$5' },
             }}>
-            <Text
-              css={{
-                zIndex: '999',
-                fontFamily: '$inter',
-                // fontWeight: '600',
-                fontSize: '18px',
-                color: '$superLogo',
-                lineHeight: '48px',
-                letterSpacing: '-0.03rem',
-              }}>
-              <strong>ISI</strong>® Elite
-            </Text>
+            <Image src={brandLogo} width="200px" height="46px" alt="ISI® Elite Training" />
           </Box>
         </Link>
 
@@ -75,11 +67,11 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 marginRight: '$3',
-                color: '$sage11',
+                color: '$gray10',
                 '@sm': { marginRight: '$2' },
                 '&:hover': {
                   textDecoration: 'none',
-                  color: '$blue10',
+                  color: '$lime9',
                 },
               }}>
               Tickets
@@ -92,12 +84,12 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 marginRight: '$3',
-                color: '$sage11',
+                color: '$gray10',
 
                 '@sm': { marginRight: '$2' },
                 '&:hover': {
                   textDecoration: 'none',
-                  color: '$yellow9',
+                  color: '$lime9',
                 },
               }}>
               Speakers
@@ -110,12 +102,12 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 display: 'none',
-                color: '$sage11',
+                color: '$gray10',
                 mr: '$3',
                 '@bp2': { display: 'block', mr: '$3' },
                 '&:hover': {
                   textDecoration: 'none',
-                  color: '$red9',
+                  color: '$lime9',
                 },
               }}>
               Purchase
@@ -128,12 +120,12 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 display: 'none',
-                color: '$sage11',
+                color: '$gray10',
                 mr: '$3',
                 '@bp2': { display: 'block', mr: '$3' },
                 '&:hover': {
                   textDecoration: 'none',
-                  color: '$orange9',
+                  color: '$lime9',
                 },
               }}>
               Other
@@ -147,7 +139,7 @@ export const Navbar = () => {
           <Box
             css={{
               justifyContent: 'right',
-              width: '100px',
+              width: '200px',
               mr: '$1',
               display: 'inline-flex',
 

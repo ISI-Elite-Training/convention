@@ -61,12 +61,6 @@ export const Hero = () => {
             paddingRight: '40px',
           },
         }}>
-        {/* TIME DISPLAY */}
-        <TimeDisplay>
-          <TimeCode />
-        </TimeDisplay>
-        {/* END TIME DISPLAY */}
-
         {/* <!-- Header or Logo (Large) --> */}
         <Heading
           size="4"

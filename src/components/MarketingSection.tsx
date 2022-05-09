@@ -60,7 +60,7 @@ export const MarketingSection = () => {
             fontSize: '18px',
             fontWeight: '500',
             lineHeight: '1.4',
-            color: '$gray11',
+            color: '$slate2',
             mb: '40px',
             '@sm': {
               maxWidth: '100%',

@@ -35,24 +35,24 @@ export const AdobeAe = () => {
           }}>
           <Text
             css={{
-              fontSize: '14px',
-              color: '$gray11',
-              fontWeight: '500',
+              fontSize: '16px',
+              color: '$slate10',
+              fontWeight: '900',
               lineHeight: '2',
               paddingLeft: '6px',
             }}>
-            Are you ready?
+            Get ready to..
           </Text>
 
-          <Heading size="3" css={{ fontWeight: '700', paddingLeft: '5px', color: '$gray12' }}>
-            Train for Life.
+          <Heading size="3" css={{ fontWeight: '700', paddingLeft: '5px', color: '$slate2' }}>
+            Train for life.
           </Heading>
           <Paragraph
             size="1"
             css={{
               fontFamily: '$inter',
               fontWeight: '500',
-              color: '$gray10',
+              color: '$slate2',
               lineHeight: '1.3',
               px: '5px',
               py: '15px',
