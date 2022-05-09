@@ -41,7 +41,7 @@ export default function Home() {
         <BackDrop>
           <Image src={conventionBackdrop} objectFit="cover" layout="fill" />
           <CenterContainer>
-            <Image src={conventionLogo} width="400" height="300" />
+            <Image src={conventionLogo} width="400" height="300" alt="CONVENTION" />
           </CenterContainer>
         </BackDrop>
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { styled } from '@stitches/react';
 
-type EightySectionProps = React.PropsWithChildren<{}>;
+type EightySectionProps = React.PropsWithChildren<unknown>;
 
 const Eighty = styled('div', {
   zIndex: '10',
