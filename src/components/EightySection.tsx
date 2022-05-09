@@ -9,9 +9,9 @@ const Eighty = styled('div', {
   width: '100vw',
   minWidth: '100vw',
   height: 'auto',
-  backgroundColor: '$slate5',
-
-  // backgroundImage: 'url("/img/four.png")',
+  backgroundColor: '$lime9',
+  // backgroundImage:
+  //  'linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%)',
   backgroundPosition: 'center',
   backdropFilter: 'blur(10px)',
   // boxShadow: '$colors$shadowLight 0px 10px 38px -10px, $colors$shadowDark 0px 10px 20px -15px',
@@ -30,20 +30,10 @@ const Eighty = styled('div', {
   overflowX: 'hidden',
 });
 
-const ImageHolder = styled('div', {
-  zIndex: '1',
-  position: 'relative',
-  margin: '0',
-  padding: '0',
-});
-
 export const EightySection = ({ children, ...other }: EightySectionProps) => {
   return (
     <div>
       <Eighty {...other}>{children}</Eighty>
-      <ImageHolder>
-        <Image src="/img/four.png" layout="fill" objectFit="cover" alt="gradient" />
-      </ImageHolder>
     </div>
   );
 };

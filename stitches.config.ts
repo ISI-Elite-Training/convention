@@ -139,16 +139,7 @@ import {
 
 // Exports..
 export type { VariantProps } from '@stitches/react';
-export const {
-  styled,
-  css,
-  theme,
-  createTheme,
-  getCssText,
-  globalCss,
-  keyframes,
-  config,
-} = createStitches({
+export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes, config } = createStitches({
   theme: {
     colors: {
       ...gray,
@@ -258,11 +249,10 @@ export const {
     // Fonts..
     fonts: {
       inter: "'Inter', 'sans-serif'",
-      jetbrain: "'Jet Brains', monopace",
+      jetbrain: 'Jet Brains, monopace',
       neueplak: "'Neue Plak Extended', sans-serif",
       neuewide: "'Neue Plak Wide', sans-serif",
-      untitled:
-        "-apple-system, BlinkMacSystemFont, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+      untitled: "-apple-system, BlinkMacSystemFont, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
     },
     space: {
       1: '5px',

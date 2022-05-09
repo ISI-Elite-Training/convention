@@ -41,11 +41,11 @@ export const AdobeAe = () => {
               lineHeight: '2',
               paddingLeft: '6px',
             }}>
-            Adobe® After Effects
+            Are you ready?
           </Text>
 
           <Heading size="3" css={{ fontWeight: '700', paddingLeft: '5px', color: '$gray12' }}>
-            Your pack, your style.
+            Train for Life.
           </Heading>
           <Paragraph
             size="1"
@@ -65,7 +65,7 @@ export const AdobeAe = () => {
                 width: '100%',
               },
             }}>
-            Create open and close animations that take the dropdown menu’s actual position into account.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Paragraph>
 
           <Link href="/welcome" passHref>
