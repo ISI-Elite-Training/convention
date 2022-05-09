@@ -19,9 +19,7 @@ import { ArrowRightIcon } from '@radix-ui/react-icons';
 export const AdobeAe = () => {
   return (
     <>
-      <Box
-        css={{ paddingLeft: '0', paddingRight: '0', paddingBottom: '120px' }}
-      >
+      <Box css={{ paddingLeft: '0', paddingRight: '0', paddingBottom: '120px' }}>
         <Container
           size="3"
           css={{
@@ -34,8 +32,7 @@ export const AdobeAe = () => {
               paddingLeft: '0px',
               paddingRight: '0px',
             },
-          }}
-        >
+          }}>
           <Text
             css={{
               fontSize: '14px',
@@ -43,15 +40,11 @@ export const AdobeAe = () => {
               fontWeight: '500',
               lineHeight: '2',
               paddingLeft: '6px',
-            }}
-          >
+            }}>
             Adobe® After Effects
           </Text>
 
-          <Heading
-            size="3"
-            css={{ fontWeight: '700', paddingLeft: '5px', color: '$gray12' }}
-          >
+          <Heading size="3" css={{ fontWeight: '700', paddingLeft: '5px', color: '$gray12' }}>
             Your pack, your style.
           </Heading>
           <Paragraph
@@ -71,10 +64,8 @@ export const AdobeAe = () => {
                 fontSize: '14px',
                 width: '100%',
               },
-            }}
-          >
-            Create open and close animations that take the dropdown menu’s
-            actual position into account.
+            }}>
+            Create open and close animations that take the dropdown menu’s actual position into account.
           </Paragraph>
 
           <Link href="/welcome" passHref>

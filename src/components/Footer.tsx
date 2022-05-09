@@ -31,8 +31,7 @@ export const Footer = () => {
           WebkitBackdropFilter: 'blur(12px)',
           saturate: '200%',
           zIndex: '9999',
-        }}
-      >
+        }}>
         {/* <!-- LOGO SECTION --> */}
 
         <Box
@@ -46,8 +45,7 @@ export const Footer = () => {
               boxShadow: 'none',
             },
             '@bp2': { ml: '$5' },
-          }}
-        >
+          }}>
           <Text
             css={{
               zIndex: '999',
@@ -58,8 +56,7 @@ export const Footer = () => {
               opacity: '0.4',
               lineHeight: '58px',
               letterSpacing: '-0.03rem',
-            }}
-          >
+            }}>
             Copyright © 2022
           </Text>
         </Box>
@@ -76,8 +73,7 @@ export const Footer = () => {
             '@sm': {
               ai: 'right',
             },
-          }}
-        >
+          }}>
           <Link href="https://twitter.com/chv_ndler" passHref>
             <NewLink
               target="_blank"
@@ -92,8 +88,7 @@ export const Footer = () => {
                   textDecoration: 'none',
                   color: '$yellow9',
                 },
-              }}
-            >
+              }}>
               Twitter
             </NewLink>
           </Link>
@@ -112,8 +107,7 @@ export const Footer = () => {
                   textDecoration: 'none',
                   color: '$red9',
                 },
-              }}
-            >
+              }}>
               Inta
             </NewLink>
           </Link>
@@ -131,8 +125,7 @@ export const Footer = () => {
                   textDecoration: 'none',
                   color: '$blue10',
                 },
-              }}
-            >
+              }}>
               Facebook
             </NewLink>
           </Link>
@@ -150,8 +143,7 @@ export const Footer = () => {
 
               '@bp2': { mr: '$4' },
               '@sm': { display: 'none' },
-            }}
-          >
+            }}>
             {/* <!-- THEME SWITCH --> */}
           </Box>
         </Flex>

@@ -8,7 +8,6 @@ import { Text } from '@/system/text';
 import { NewLink } from '@/system/newlink';
 
 // FUNCTIONS
-import { ThemeSwitch } from '@/components/ThemeSwitch';
 import { PopoverPanel } from '@/components/PopoverPanel';
 
 export const Navbar = () => {
@@ -29,8 +28,7 @@ export const Navbar = () => {
           WebkitBackdropFilter: 'blur(12px)',
           saturate: '200%',
           zIndex: '9999',
-        }}
-      >
+        }}>
         {/* <!-- LOGO SECTION --> */}
         <Link href="/" passHref>
           <Box
@@ -44,8 +42,7 @@ export const Navbar = () => {
                 boxShadow: 'none',
               },
               '@bp2': { ml: '$5' },
-            }}
-          >
+            }}>
             <Text
               css={{
                 zIndex: '999',
@@ -55,8 +52,7 @@ export const Navbar = () => {
                 color: '$superLogo',
                 lineHeight: '48px',
                 letterSpacing: '-0.03rem',
-              }}
-            >
+              }}>
               <strong>ISI</strong>® Elite
             </Text>
           </Box>
@@ -73,8 +69,7 @@ export const Navbar = () => {
             '@sm': {
               display: 'none',
             },
-          }}
-        >
+          }}>
           <Link href="/blog" passHref>
             <NewLink
               variant="subtle"
@@ -86,8 +81,7 @@ export const Navbar = () => {
                   textDecoration: 'none',
                   color: '$blue10',
                 },
-              }}
-            >
+              }}>
               Tickets
             </NewLink>
           </Link>
@@ -105,8 +99,7 @@ export const Navbar = () => {
                   textDecoration: 'none',
                   color: '$yellow9',
                 },
-              }}
-            >
+              }}>
               Speakers
             </NewLink>
           </Link>
@@ -124,8 +117,7 @@ export const Navbar = () => {
                   textDecoration: 'none',
                   color: '$red9',
                 },
-              }}
-            >
+              }}>
               Purchase
             </NewLink>
           </Link>
@@ -143,8 +135,7 @@ export const Navbar = () => {
                   textDecoration: 'none',
                   color: '$orange9',
                 },
-              }}
-            >
+              }}>
               Other
             </NewLink>
           </Link>
@@ -162,11 +153,7 @@ export const Navbar = () => {
 
               '@bp2': { mr: '$4' },
               '@xs': { marginRight: '-5px' },
-            }}
-          >
-            {/* <!-- THEME SWITCH --> */}
-            <ThemeSwitch />
-          </Box>
+            }}></Box>
 
           <PopoverPanel />
         </Flex>

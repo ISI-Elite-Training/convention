@@ -5,7 +5,6 @@ import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import { MarketingSection } from '@/components/MarketingSection';
 import { Box } from '@/system/box';
-import { Heading } from '@/system/heading';
 
 import { styled } from 'stitches.config';
 import conventionLogo from '@/public/logo/convention.svg';

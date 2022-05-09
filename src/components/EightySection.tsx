@@ -42,12 +42,7 @@ export const EightySection = ({ children, ...other }: EightySectionProps) => {
     <div>
       <Eighty {...other}>{children}</Eighty>
       <ImageHolder>
-        <Image
-          src="/img/four.png"
-          layout="fill"
-          objectFit="cover"
-          alt="gradient"
-        />
+        <Image src="/img/four.png" layout="fill" objectFit="cover" alt="gradient" />
       </ImageHolder>
     </div>
   );

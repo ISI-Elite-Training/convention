@@ -42,13 +42,9 @@ const App = ({ Component, pageProps }: AppProps) => {
         disableTransitionOnChange
         attribute="class"
         value={{ light: 'light-theme', dark: darkTheme.className }}
-        defaultTheme="system"
-      >
+        defaultTheme="system">
         <Head>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, user-scalable=no"
-          />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         </Head>
         <Box css={{ backgroundColor: '$sage1', zIndex: '0' }}>
           <Component {...pageProps} />

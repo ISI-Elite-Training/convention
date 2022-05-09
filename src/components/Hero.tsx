@@ -46,8 +46,7 @@ export const Hero = () => {
       size="3"
       css={{
         backgroundColor: '$translucent',
-      }}
-    >
+      }}>
       <Container
         size="2"
         css={{
@@ -61,8 +60,7 @@ export const Hero = () => {
             paddingLeft: '0px',
             paddingRight: '40px',
           },
-        }}
-      >
+        }}>
         {/* TIME DISPLAY */}
         <TimeDisplay>
           <TimeCode />
@@ -82,8 +80,7 @@ export const Hero = () => {
               textAlign: 'left',
               fontSize: '44px',
             },
-          }}
-        >
+          }}>
           Welcome.
         </Heading>
 
@@ -112,11 +109,9 @@ export const Hero = () => {
               mb: '60px',
               lineHeight: '1.3',
             },
-          }}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis
-          scelerisque fermentum dui faucibus in ornare.
+          }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lobortis scelerisque fermentum dui faucibus in ornare.
         </Paragraph>
 
         <Flex
@@ -126,8 +121,7 @@ export const Hero = () => {
               jc: 'center',
               my: '$6',
             },
-          }}
-        >
+          }}>
           <Link href="/shop" passHref>
             <AtelierButton color="lime">
               <span>Buy tickets now</span>

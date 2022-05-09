@@ -54,10 +54,7 @@ export default class Document extends NextDocument {
         <body>
           <Main />
           <NextScript>
-            <style
-              id="stitches"
-              dangerouslySetInnerHTML={{ __html: getCssAndReset() }}
-            />
+            <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssAndReset() }} />
           </NextScript>
         </body>
       </Html>
