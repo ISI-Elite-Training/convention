@@ -3,6 +3,7 @@ module.exports = {
   images: {
     domains: [
       'spaces.isielite.space',
+      'cdn.ady.systems',
       'localhost', // For Strapi
     ],
   },

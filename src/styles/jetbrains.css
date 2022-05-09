@@ -1,0 +1,28 @@
+/* JETBRAINSMONO */
+
+@font-face {
+  font-family: 'Jet Brains';
+  src: url('https://cdn.ady.systems/jetbrain/JetBrainsMono-Medium.woff2');
+  src: local('/fonts/JetBrainsMono-Medium.woff2'), local('/fonts/JetBrainsMono-Medium.woff'),
+    url('https://cdn.ady.systems/jetbrain/JetBrainsMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jet Brains';
+  src: url('https://cdn.ady.systems/jetbrain/JetBrainsMono-Regular.woff2');
+  src: local('/fonts/JetBrainsMono-Regular.woff2'), local('/fonts/JetBrainsMono-Regular.woff'),
+    url('https://cdn.ady.systems/jetbrain/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jet Brains';
+  src: url('https://cdn.ady.systems/jetbrain/JetBrainsMono-Bold.woff2');
+  src: local('/fonts/JetBrainsMono-Bold.woff2'), local('/fonts/JetBrainsMono-Bold.woff'),
+    url('https://cdn.ady.systems/jetbrain/JetBrainsMono-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}

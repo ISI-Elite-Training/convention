@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
+import { ThemeProvider } from 'next-themes';
 import { Box } from '@/system/box';
 import '@/styles/inter.css';
 import '@/styles/global.css';
@@ -37,16 +38,22 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
-      <Box css={{ backgroundColor: '$sage1', zIndex: '0' }}>
+      <ThemeProvider
+        disableTransitionOnChange
+        attribute="class"
+        value={{ light: 'light-theme', dark: darkTheme.className }}
+        defaultTheme="system"
+      >
         <Head>
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0, user-scalable=no"
           />
         </Head>
-
-        <Component {...pageProps} />
-      </Box>
+        <Box css={{ backgroundColor: '$sage1', zIndex: '0' }}>
+          <Component {...pageProps} />
+        </Box>
+      </ThemeProvider>
     </>
   );
 };

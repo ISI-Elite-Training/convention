@@ -44,7 +44,7 @@ const SwitchThumb = StyledThumb;
 // Your app...
 const Flex = styled('div', { display: 'flex' });
 
-export const ThemeSwitch = props => {
+export const ThemeSwitch = (props) => {
   const { theme, setTheme } = useTheme();
 
   return (
@@ -54,7 +54,8 @@ export const ThemeSwitch = props => {
           alignItems: 'center',
           marginRight: '$2',
           marginLeft: '$2',
-        }}>
+        }}
+      >
         <Switch
           defaultChecked
           id="s1"
@@ -62,22 +63,35 @@ export const ThemeSwitch = props => {
           onCheckedChange={() => {
             const newTheme = theme === 'dark' ? 'theme' : 'dark';
 
-            document.querySelectorAll('[data-demo-iframe]').forEach((iframe: HTMLIFrameElement) => {
-              if (iframe.contentDocument?.documentElement) {
-                iframe.contentDocument.documentElement.classList.toggle(darkTheme.className);
-                iframe.contentDocument.documentElement.classList.toggle('theme');
-                iframe.contentDocument.documentElement.style.setProperty('color-scheme', newTheme);
-              }
-            });
+            document
+              .querySelectorAll('[data-demo-iframe]')
+              .forEach((iframe: HTMLIFrameElement) => {
+                if (iframe.contentDocument?.documentElement) {
+                  iframe.contentDocument.documentElement.classList.toggle(
+                    darkTheme.className,
+                  );
+                  iframe.contentDocument.documentElement.classList.toggle(
+                    'theme',
+                  );
+                  iframe.contentDocument.documentElement.style.setProperty(
+                    'color-scheme',
+                    newTheme,
+                  );
+                }
+              });
 
             document.documentElement.classList.toggle(darkTheme.className);
             document.documentElement.classList.toggle('theme');
-            document.documentElement.style.setProperty('color-scheme', newTheme);
+            document.documentElement.style.setProperty(
+              'color-scheme',
+              newTheme,
+            );
 
             // Finally, we still need to let `next-themes` know of the theme change so that it saves it to local storage.
             setTheme(newTheme);
           }}
-          {...props}>
+          {...props}
+        >
           <SwitchThumb />
         </Switch>
       </Flex>
