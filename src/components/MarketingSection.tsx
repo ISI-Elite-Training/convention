@@ -37,6 +37,7 @@ export const MarketingSection = () => {
         <Heading
           size="4"
           css={{
+            color: '$slate2',
             fontSize: '40px',
             fontFamily: '$neueplak',
             fontWeight: '400',
@@ -47,8 +48,9 @@ export const MarketingSection = () => {
               textAlign: 'left',
               paddingBottom: '10px',
             },
-          }}>
-          <strong>Most</strong> Wanted.
+          }}
+        >
+          <strong>Plan</strong> Your Visit.
         </Heading>
 
         <Paragraph
@@ -74,8 +76,9 @@ export const MarketingSection = () => {
               mb: '60px',
               lineHeight: '1.3',
             },
-          }}>
-          The <strong>best-selling</strong> products that ADY® has to offer. These are essential design components for your next project.
+          }}
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </Paragraph>
       </Container>
 
@@ -88,7 +91,8 @@ export const MarketingSection = () => {
           paddingTop: '10px',
           paddingBottom: '80px',
           px: 'auto',
-        }}>
+        }}
+      >
         <Grid
           css={{
             height: 'auto',
@@ -98,7 +102,8 @@ export const MarketingSection = () => {
               gap: '10px',
               gridTemplateColumns: '1fr',
             },
-          }}>
+          }}
+        >
           {/* <!-- BOX ONE --> */}
           <Box>
             <Card>
@@ -108,7 +113,8 @@ export const MarketingSection = () => {
                   bottom: '0',
                   left: '0',
                   margin: '30px',
-                }}>
+                }}
+              >
                 <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
                   SFX. 001
                 </Text>
@@ -133,7 +139,8 @@ export const MarketingSection = () => {
                   bottom: '0',
                   left: '0',
                   margin: '30px',
-                }}>
+                }}
+              >
                 <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
                   INTERVAL. v001
                 </Text>
@@ -160,7 +167,8 @@ export const MarketingSection = () => {
           paddingTop: '10px',
           paddingBottom: '80px',
           px: 'auto',
-        }}>
+        }}
+      >
         <AdobeAe />
       </Container>
 

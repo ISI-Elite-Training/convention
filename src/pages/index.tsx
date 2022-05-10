@@ -6,6 +6,7 @@ import { Hero } from '@/components/Hero';
 import { MarketingSection } from '@/components/MarketingSection';
 import { Box } from '@/system/box';
 import { Container } from '@/system/container';
+import { AtelierButton } from '@/system/custom/AtelierButton';
 
 import { styled } from 'stitches.config';
 import conventionLogo from '@/public/logo/convention.svg';
@@ -44,6 +45,9 @@ export default function Home() {
           <CenterContainer>
             <Container size="3">
               <Image src={conventionLogo} width="400" height="300" alt="CONVENTION" />
+            </Container>
+            <Container size="3">
+              <AtelierButton color="lime">Register Now</AtelierButton>
             </Container>
           </CenterContainer>
         </BackDrop>
