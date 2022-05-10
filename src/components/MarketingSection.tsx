@@ -39,8 +39,8 @@ export const MarketingSection = () => {
           css={{
             color: '$slate2',
             fontSize: '40px',
-            fontFamily: '$neueplak',
-            fontWeight: '400',
+            fontFamily: '$brynasWide',
+            fontWeight: '600',
             textAlign: 'center',
             paddingBottom: '10px',
             '@sm': {
@@ -50,7 +50,7 @@ export const MarketingSection = () => {
             },
           }}
         >
-          <strong>Plan</strong> Your Visit.
+          Plan your visit.
         </Heading>
 
         <Paragraph

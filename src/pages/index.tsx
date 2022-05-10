@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import { MarketingSection } from '@/components/MarketingSection';
 import { Box } from '@/system/box';
+import { Heading } from '@/system/heading';
 import { Container } from '@/system/container';
 import { AtelierButton } from '@/system/custom/AtelierButton';
 
@@ -43,11 +45,16 @@ export default function Home() {
         <BackDrop>
           <Image src={conventionBackdrop} objectFit="cover" layout="fill" />
           <CenterContainer>
-            <Container size="3">
-              <Image src={conventionLogo} width="400" height="300" alt="CONVENTION" />
+            <Container size="3" css={{ zIndex: '9999', alignItems: 'center', textAlign: 'center' }}>
+              <Image src={conventionLogo} width="400" height="150" alt="CONVENTION" />
+              <Heading size="2" css={{ color: '$slate2', paddingTop: '10px', paddingBottom: '20px' }}>
+                AUGUST 08 | Charlotte, NC
+              </Heading>
             </Container>
             <Container size="3">
-              <AtelierButton color="lime">Register Now</AtelierButton>
+              <Link href="https://eventbrite.com" passHref target="_blank" rel="no refferrer">
+                <AtelierButton color="lime">Register Now</AtelierButton>
+              </Link>
             </Container>
           </CenterContainer>
         </BackDrop>

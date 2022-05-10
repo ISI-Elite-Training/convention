@@ -248,6 +248,9 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
 
     // Fonts..
     fonts: {
+      brynas: 'Brynas Neue 1912',
+      brynasWide: 'Brynas Neue 1912 Black Wide',
+      brynasBoldCond: 'Brynas Neue 1912 Bold Condensed',
       inter: "'Inter', 'sans-serif'",
       jetbrain: 'Jet Brains, monopace',
       neueplak: "'Neue Plak Extended', sans-serif",

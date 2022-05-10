@@ -4,6 +4,7 @@ import { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
 import { Box } from '@/system/box';
 import '@/styles/inter.css';
+import '@/styles/brynasneue.css';
 import '@/styles/global.css';
 
 // stitches.config
@@ -42,7 +43,8 @@ const App = ({ Component, pageProps }: AppProps) => {
         disableTransitionOnChange
         attribute="class"
         value={{ light: 'light-theme', dark: darkTheme.className }}
-        defaultTheme="system">
+        defaultTheme="system"
+      >
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         </Head>
