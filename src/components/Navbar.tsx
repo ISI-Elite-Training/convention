@@ -113,7 +113,7 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 marginRight: '$3',
-                color: '$gray10',
+                color: '$slate2',
                 '@sm': { marginRight: '$2' },
                 '&:hover': {
                   textDecoration: 'none',
@@ -131,7 +131,7 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 marginRight: '$3',
-                color: '$gray10',
+                color: '$slate2',
 
                 '@sm': { marginRight: '$2' },
                 '&:hover': {
@@ -150,7 +150,7 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 display: 'none',
-                color: '$gray10',
+                color: '$slate2',
                 mr: '$3',
                 '@bp2': { display: 'block', mr: '$3' },
                 '&:hover': {
@@ -169,7 +169,7 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 display: 'none',
-                color: '$gray10',
+                color: '$slate2',
                 mr: '$3',
                 '@bp2': { display: 'block', mr: '$3' },
                 '&:hover': {

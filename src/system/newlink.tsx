@@ -3,7 +3,8 @@ import { Text } from '@/system/text';
 
 export const NewLink = styled('a', {
   alignItems: 'center',
-  fontSize: '14px',
+  fontFamily: '$brynasWide',
+  fontSize: '11px',
   fontWeight: '600',
   gap: '$1',
   flexShrink: 0,
@@ -32,7 +33,7 @@ export const NewLink = styled('a', {
   variants: {
     variant: {
       subtle: {
-        color: '$slate10',
+        color: '$slate2',
         textDecorationColor: '$slate11',
         '&:focus': {
           outlineColor: '$slate8',
