@@ -4,7 +4,6 @@ import { Box, Grid, Text, Container, Flex, Heading, Section, Separator, Avatar, 
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { MarketingButton } from '@/components/MarketingButton';
 import { Caption } from '@/components/Caption';
-import { Root as AccessibleIcon } from '@radix-ui/react-accessible-icon';
 import { CaseStudyLogo } from '@/components/CaseStudyLogo';
 import { LogoLink } from '@/components/LogoLink';
 
@@ -43,9 +42,7 @@ export const CaseStudies = () => {
           <Card variant="interactive" as="a" href="/case-studies/vercel">
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
-                <AccessibleIcon label="Vercel case study">
-                  <CaseStudyLogo variant="Vercel" />
-                </AccessibleIcon>
+                <CaseStudyLogo variant="Vercel" />
               </Box>
               <TestimonialText css={{ mb: '$4' }}>
                 We’ve been able to focus on building solid user experiences on top of Radix Primitives. With UI components, there are just
@@ -62,9 +59,7 @@ export const CaseStudies = () => {
           <Card variant="interactive" as="a" href="/case-studies/codesandbox">
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
-                <AccessibleIcon label="CodeSandbox case study">
-                  <CaseStudyLogo variant="CodeSandbox" />
-                </AccessibleIcon>
+                <CaseStudyLogo variant="CodeSandbox" />
               </Box>
               <TestimonialText css={{ mb: '$4' }}>
                 Radix has significantly improved the accessibility standard in our components. We spend far less time discussing and
@@ -111,57 +106,43 @@ export const CaseStudies = () => {
         <Grid flow="column" align="center" justify="start" gap="6">
           <NextLink href="/case-studies/atom-learning" passHref>
             <LogoLink>
-              <AccessibleIcon label="Atom Learning case study">
-                <CaseStudyLogo variant="Atom Learning" width="86" />
-              </AccessibleIcon>
+              <CaseStudyLogo variant="Atom Learning" width="86" />
             </LogoLink>
           </NextLink>
 
           <NextLink href="/case-studies/basedash" passHref>
             <LogoLink>
-              <AccessibleIcon label="Basedash case study">
-                <CaseStudyLogo variant="Basedash" width="135" />
-              </AccessibleIcon>
+              <CaseStudyLogo variant="Basedash" width="135" />
             </LogoLink>
           </NextLink>
 
           <NextLink href="/case-studies/basement-studio" passHref>
             <LogoLink css={{ mb: -6 }}>
-              <AccessibleIcon label="basement.studio case study">
-                <CaseStudyLogo variant="basement.studio" width="120" />
-              </AccessibleIcon>
+              <CaseStudyLogo variant="basement.studio" width="120" />
             </LogoLink>
           </NextLink>
 
           <NextLink href="/case-studies/linear" passHref>
             <LogoLink>
-              <AccessibleIcon label="Linear case study">
-                <CaseStudyLogo variant="Linear" width="105" />
-              </AccessibleIcon>
+              <CaseStudyLogo variant="Linear" width="105" />
             </LogoLink>
           </NextLink>
 
           <NextLink href="/case-studies/liveblocks" passHref>
             <LogoLink css={{ mb: -3 }}>
-              <AccessibleIcon label="Liveblocks case study">
-                <CaseStudyLogo variant="Liveblocks" width="135" />
-              </AccessibleIcon>
+              <CaseStudyLogo variant="Liveblocks" width="135" />
             </LogoLink>
           </NextLink>
 
           <NextLink href="/case-studies/supabase" passHref>
             <LogoLink css={{ mb: -2 }}>
-              <AccessibleIcon label="Supabase case study">
-                <CaseStudyLogo variant="Supabase" width="140" />
-              </AccessibleIcon>
+              <CaseStudyLogo variant="Supabase" width="140" />
             </LogoLink>
           </NextLink>
 
           <NextLink href="/case-studies/university-of-amsterdam" passHref>
             <LogoLink css={{ mt: 2 }}>
-              <AccessibleIcon label="University of Amsterdam case study">
-                <CaseStudyLogo variant="University of Amsterdam" width="152" />
-              </AccessibleIcon>
+              <CaseStudyLogo variant="University of Amsterdam" width="152" />
             </LogoLink>
           </NextLink>
 

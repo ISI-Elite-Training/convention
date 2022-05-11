@@ -1,4 +1,5 @@
-import { Box, darkTheme, styled } from 'stitches.config';
+import { darkTheme, styled } from 'stitches.config';
+import { Box } from '@/system';
 import React from 'react';
 
 export const StyledButton = styled('button', {

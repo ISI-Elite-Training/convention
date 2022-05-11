@@ -79,14 +79,14 @@ export const Navbar = () => {
                 display: 'block',
                 minWidth: '100px',
                 ml: '$2',
-                display: 'inline-flex',
+                //  display: 'inline-flex',
                 textDecoration: 'none',
               },
               '@xs': {
                 display: 'block',
                 minWidth: '100px',
                 ml: '$2',
-                display: 'inline-flex',
+                //  display: 'inline-flex',
                 textDecoration: 'none',
               },
             }}
