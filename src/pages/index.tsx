@@ -10,10 +10,11 @@ import { Box } from '@/system/box';
 import { Heading } from '@/system/heading';
 import { Container } from '@/system/container';
 import { AtelierButton } from '@/system/custom/AtelierButton';
+import { VideoComponent } from '@/components/VideoComponent';
 
 import { styled } from 'stitches.config';
 import conventionLogo from '@/public/logo/convention.svg';
-import conventionBackdrop from '@/public/img/ConventionBackdrop.jpg';
+import conventionVideo from '@/public/img/WebVideo.gif';
 
 const BackDrop = styled('div', {
   position: 'relative',
@@ -44,17 +45,32 @@ export default function Home() {
       <Box>
         <Navbar />
         <BackDrop>
-          {/* <!-- <Image src={conventionBackdrop} objectFit="cover" layout="fill" alt="backgroundImage" /> --> */}
+          <Image className="web_video" src={conventionVideo} objectFit="cover" layout="fill" alt="backgroundImage" />
+
           <CenterContainer>
             <Container size="3" css={{ zIndex: '9999', alignItems: 'center', textAlign: 'center' }}>
               <Image src={conventionLogo} width="400" height="150" alt="CONVENTION" />
-              <Heading size="2" css={{ color: '$slate2', paddingTop: '10px', paddingBottom: '20px' }}>
-                AUGUST 08 | Charlotte, NC
+              <Heading size="3" css={{ color: '$slate2', paddingTop: '10px', paddingBottom: '0px' }}>
+                AUGUST 08, 2022
+              </Heading>
+              <Heading
+                size="1"
+                css={{
+                  //fontSize: '14px',
+                  fontWeight: '700',
+                  color: '$slate2',
+                  paddingTop: '8px',
+                  paddingBottom: '30px',
+                  lineHeight: 'normal',
+                  textTransform: 'uppercase',
+                }}
+              >
+                Charlotte, NC
               </Heading>
             </Container>
             <Container size="3">
               <Link href="https://eventbrite.com" passHref target="_blank" rel="no refferrer">
-                <AtelierButton color="lime">Register Now</AtelierButton>
+                <AtelierButton color="lime">Register Now →</AtelierButton>
               </Link>
             </Container>
           </CenterContainer>

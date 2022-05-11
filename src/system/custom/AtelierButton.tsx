@@ -37,7 +37,7 @@ export const button = css({
   marginBottom: '0px',
 
   // BUTTON TEXT
-  fontSize: '13px',
+  fontSize: '14px',
   fontWeight: '600',
   fontFamily: '$inter',
   color: '$white',
