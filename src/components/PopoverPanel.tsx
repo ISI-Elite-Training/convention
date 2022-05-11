@@ -16,31 +16,31 @@ import { styled } from '@stitches/react';
 // Navigation ( Map )...
 const navigation = [
   {
-    name: 'index',
+    name: 'Tickets',
     description: '',
     href: '/',
     // icon: IconOne,
   },
   {
-    name: 'blog',
+    name: 'Speakers',
     description: '',
     href: '/cover',
     // icon: IconTwo,
   },
   {
-    name: 'projects',
+    name: 'Agenda',
     description: '',
     href: 'https://github.com/chvndler',
     // icon: IconThree,
   },
   {
-    name: 'archive',
+    name: 'Learn More',
     description: '',
     href: 'https://github.com/chvndler',
     // icon: IconThree,
   },
   {
-    name: 'film',
+    name: 'Other',
     description: '',
     href: 'https://github.com/chvndler',
     // icon: IconThree,
@@ -111,8 +111,8 @@ const MenuBox = styled('div', {
 
 // MENU LINK STYLING
 const MenuLink = styled('div', {
-  fontSize: '26px',
-  fontFamily: '$inter',
+  fontSize: '38px',
+  fontFamily: '$brynasBoldCond',
   fontWeight: '700',
   color: '$slate1',
   lineHeight: '1',
@@ -183,7 +183,8 @@ export const PopoverPanel = () => {
                   '@sm': {
                     display: 'block',
                   },
-                }}>
+                }}
+              >
                 <Hamburger
                   toggled={isOpen}
                   toggle={setOpen}
@@ -204,7 +205,8 @@ export const PopoverPanel = () => {
               enterTo="opacity-100 translate-y-0"
               leave="transition ease-in duration-150"
               leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1">
+              leaveTo="opacity-0 translate-y-1"
+            >
               {/* <!-- Begin Panel --> */}
               <Popover.Panel as="div">
                 <Dropdown>
@@ -249,7 +251,8 @@ export const PopoverPanel = () => {
                           color: '$slate1',
 
                           paddingTop: '4px',
-                        }}>
+                        }}
+                      >
                         <span>© 2022 All Rights Reserved.</span>
                       </Text>
                     </Box>

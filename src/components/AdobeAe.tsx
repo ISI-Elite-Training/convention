@@ -4,6 +4,7 @@ import Link from 'next/link';
 import NextLink from 'next/link';
 
 // ATELIER DESIGN SYSTEM IMPORTS
+import { Caption } from '@/components/Caption';
 import { Box } from '@/system/box';
 import { Text } from '@/system/text';
 import { Heading } from '@/system/heading';
@@ -32,21 +33,13 @@ export const AdobeAe = () => {
               paddingLeft: '0px',
               paddingRight: '0px',
             },
-          }}>
-          <Text
-            css={{
-              fontSize: '16px',
-              color: '$slate10',
-              fontWeight: '900',
-              lineHeight: '2',
-              paddingLeft: '6px',
-            }}>
-            Get ready to..
-          </Text>
-
-          <Heading size="3" css={{ fontWeight: '700', paddingLeft: '5px', color: '$slate2' }}>
+          }}
+        >
+          <Caption css={{ mb: '$1' }}>Are you ready..</Caption>
+          <Heading as="h2" size="3" css={{ fontFamily: '$inter', color: '$slate1', maxWidth: 500 }}>
             Train for life.
           </Heading>
+
           <Paragraph
             size="1"
             css={{
@@ -55,7 +48,7 @@ export const AdobeAe = () => {
               color: '$slate2',
               lineHeight: '1.3',
               px: '5px',
-              py: '15px',
+              py: '5px',
               fontSize: '16px',
               width: '80%',
               paddingBottom: '30px',
@@ -64,7 +57,8 @@ export const AdobeAe = () => {
                 fontSize: '14px',
                 width: '100%',
               },
-            }}>
+            }}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Paragraph>
 

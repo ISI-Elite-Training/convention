@@ -23,6 +23,11 @@ export const Footer = () => {
           height: '58px',
           jc: 'space-between',
           position: 'relative',
+          border: 'solid 1px $gray10',
+          borderBottomWidth: '0',
+          borderLeftWidth: '0',
+          borderRightWidth: '0',
+          borderTopWidth: '1px',
           // bottom: '0',
           margin: '0',
           backgroundColor: '$translucent',
@@ -31,7 +36,8 @@ export const Footer = () => {
           WebkitBackdropFilter: 'blur(12px)',
           saturate: '200%',
           zIndex: '9999',
-        }}>
+        }}
+      >
         {/* <!-- LOGO SECTION --> */}
 
         <Box
@@ -45,7 +51,8 @@ export const Footer = () => {
               boxShadow: 'none',
             },
             '@bp2': { ml: '$5' },
-          }}>
+          }}
+        >
           <Text
             css={{
               zIndex: '999',
@@ -56,7 +63,8 @@ export const Footer = () => {
               opacity: '0.4',
               lineHeight: '58px',
               letterSpacing: '-0.03rem',
-            }}>
+            }}
+          >
             Copyright © 2022
           </Text>
         </Box>
@@ -73,7 +81,8 @@ export const Footer = () => {
             '@sm': {
               ai: 'right',
             },
-          }}>
+          }}
+        >
           <Link href="https://twitter.com/chv_ndler" passHref>
             <NewLink
               target="_blank"
@@ -81,14 +90,15 @@ export const Footer = () => {
               variant="subtle"
               css={{
                 marginRight: '$3',
-                color: '$sage8',
+                color: '$gray12',
 
                 '@sm': { marginRight: '$2' },
                 '&:hover': {
                   textDecoration: 'none',
                   color: '$yellow9',
                 },
-              }}>
+              }}
+            >
               Twitter
             </NewLink>
           </Link>
@@ -100,15 +110,16 @@ export const Footer = () => {
               variant="subtle"
               css={{
                 display: 'none',
-                color: '$sage8',
+                color: '$gray12',
                 mr: '$3',
                 '@bp2': { display: 'block', mr: '$3' },
                 '&:hover': {
                   textDecoration: 'none',
                   color: '$red9',
                 },
-              }}>
-              Inta
+              }}
+            >
+              Instagram
             </NewLink>
           </Link>
 
@@ -119,14 +130,34 @@ export const Footer = () => {
               variant="subtle"
               css={{
                 marginRight: '$3',
-                color: '$sage8',
+                color: '$gray12',
                 '@sm': { marginRight: '$2' },
                 '&:hover': {
                   textDecoration: 'none',
                   color: '$blue10',
                 },
-              }}>
+              }}
+            >
               Facebook
+            </NewLink>
+          </Link>
+
+          <Link href="https://github.com/chvndler" passHref>
+            <NewLink
+              target="_blank"
+              rel="norefferer"
+              variant="subtle"
+              css={{
+                marginRight: '$3',
+                color: '$gray12',
+                '@sm': { marginRight: '$2' },
+                '&:hover': {
+                  textDecoration: 'none',
+                  color: '$blue10',
+                },
+              }}
+            >
+              Privacy
             </NewLink>
           </Link>
         </Flex>
@@ -143,7 +174,9 @@ export const Footer = () => {
 
               '@bp2': { mr: '$4' },
               '@sm': { display: 'none' },
-            }}>
+              '@xs': { display: 'none' },
+            }}
+          >
             {/* <!-- THEME SWITCH --> */}
           </Box>
         </Flex>

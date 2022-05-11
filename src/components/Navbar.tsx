@@ -24,13 +24,16 @@ export const Navbar = () => {
           jc: 'space-between',
           position: 'fixed',
           margin: '0',
-          backgroundColor: '$translucent',
           width: '100vw',
-          backdropFilter: 'blur(12px)',
-          WebkitBackdropFilter: 'blur(12px)',
-          saturate: '200%',
           zIndex: '9999',
-        }}>
+          backgroundColor: '$gray12',
+
+          // backgroundColor: '$translucent',
+          // backdropFilter: 'blur(12px)',
+          // WebkitBackdropFilter: 'blur(12px)',
+          // saturate: '200%',
+        }}
+      >
         {/* <!-- LOGO SECTION --> */}
         <Link href="/" passHref>
           <Box
@@ -40,13 +43,55 @@ export const Navbar = () => {
               ml: '$2',
               display: 'inline-flex',
               textDecoration: 'none',
-              mixBlendMode: 'difference',
+              // mixBlendMode: 'difference',
               '&:focus': {
                 boxShadow: 'none',
               },
-              '@bp2': { ml: '$5' },
-            }}>
+              '@sm': {
+                display: 'none',
+                minWidth: '100px',
+                ml: '$2',
+              },
+            }}
+          >
             <Image src={brandLogo} width="200px" height="46px" alt="ISI® Elite Training" />
+          </Box>
+        </Link>
+        <Link href="/" passHref>
+          <Box
+            as="a"
+            css={{
+              // display: 'none',
+              // mixBlendMode: 'difference',
+              '&:focus': {
+                boxShadow: 'none',
+              },
+              '@xl': {
+                display: 'none',
+              },
+              '@lg': {
+                display: 'none',
+              },
+              '@md': {
+                display: 'none',
+              },
+              '@sm': {
+                display: 'block',
+                minWidth: '100px',
+                ml: '$2',
+                display: 'inline-flex',
+                textDecoration: 'none',
+              },
+              '@xs': {
+                display: 'block',
+                minWidth: '100px',
+                ml: '$2',
+                display: 'inline-flex',
+                textDecoration: 'none',
+              },
+            }}
+          >
+            <Text css={{ color: '$slate2', fontSize: '14px', fontWeight: '700', lineHeight: '45px' }}>ISI® ELITE</Text>
           </Box>
         </Link>
 
@@ -61,7 +106,8 @@ export const Navbar = () => {
             '@sm': {
               display: 'none',
             },
-          }}>
+          }}
+        >
           <Link href="/blog" passHref>
             <NewLink
               variant="subtle"
@@ -73,7 +119,8 @@ export const Navbar = () => {
                   textDecoration: 'none',
                   color: '$lime9',
                 },
-              }}>
+              }}
+            >
               Tickets
             </NewLink>
           </Link>
@@ -91,7 +138,8 @@ export const Navbar = () => {
                   textDecoration: 'none',
                   color: '$lime9',
                 },
-              }}>
+              }}
+            >
               Speakers
             </NewLink>
           </Link>
@@ -109,8 +157,9 @@ export const Navbar = () => {
                   textDecoration: 'none',
                   color: '$lime9',
                 },
-              }}>
-              Purchase
+              }}
+            >
+              Agenda
             </NewLink>
           </Link>
 
@@ -127,7 +176,8 @@ export const Navbar = () => {
                   textDecoration: 'none',
                   color: '$lime9',
                 },
-              }}>
+              }}
+            >
               Other
             </NewLink>
           </Link>
@@ -139,13 +189,40 @@ export const Navbar = () => {
           <Box
             css={{
               justifyContent: 'right',
-              width: '200px',
+              width: 'auto',
               mr: '$1',
               display: 'inline-flex',
 
-              '@bp2': { mr: '$4' },
-              '@xs': { marginRight: '-5px' },
-            }}></Box>
+              '@bp2': { mr: '$2', width: '200px' },
+              '@xs': { marginRight: '-5px', width: '100px' },
+            }}
+          >
+            {/* <!-- Nav Link #3 --> */}
+            <Link href="/cover" passHref>
+              <NewLink
+                variant="subtle"
+                css={{
+                  backgroundColor: '$lime9',
+                  display: 'none',
+                  color: '$slate2',
+                  borderRadius: '6px',
+                  paddingTop: '6px',
+                  paddingBottom: '6px',
+                  paddingLeft: '10px',
+                  paddingRight: '10px',
+                  mr: '$3',
+                  '@bp2': { display: 'block', mr: '$3' },
+                  '&:hover': {
+                    textDecoration: 'none',
+                    // backgroundColor: '$lime8',
+                    opacity: '0.9',
+                  },
+                }}
+              >
+                Register Now
+              </NewLink>
+            </Link>
+          </Box>
 
           <PopoverPanel />
         </Flex>

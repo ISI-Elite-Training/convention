@@ -1,5 +1,5 @@
 {
-  "name": "conference2022",
+  "name": "convention",
   "description": "ISI® Elite Training Conference",
   "version": "1.0.0",
   "private": true,
@@ -29,6 +29,8 @@
   "dependencies": {
     "@headlessui/react": "1.6.1",
     "@radix-ui/colors": "0.1.8",
+    "@radix-ui/react-accessible-icon": "0.1.4",
+    "@radix-ui/react-avatar": "0.1.4",
     "@radix-ui/react-icons": "1.1.1",
     "@radix-ui/react-separator": "0.1.4",
     "@radix-ui/react-switch": "0.1.5",
@@ -76,10 +78,10 @@
   "main": "next.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ISI-Elite-Training/conference2022.git"
+    "url": "git+https://github.com/ISI-Elite-Training/convention.git"
   },
   "bugs": {
-    "url": "https://github.com/ISI-Elite-Training/conference2022/issues"
+    "url": "https://github.com/ISI-Elite-Training/convention/issues"
   },
-  "homepage": "https://github.com/ISI-Elite-Training/conference2022#readme"
+  "homepage": "https://github.com/ISI-Elite-Training/convention#readme"
 }

@@ -5,6 +5,7 @@ import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import { MarketingSection } from '@/components/MarketingSection';
+import { CaseStudies } from '@/components/CaseStudies';
 import { Box } from '@/system/box';
 import { Heading } from '@/system/heading';
 import { Container } from '@/system/container';
@@ -18,7 +19,7 @@ const BackDrop = styled('div', {
   position: 'relative',
   minHeight: '100vh',
   minWidth: '100vw',
-  // bc: '$translucent',
+  backgroundColor: '$gray12',
   // background: `url('https://spaces.isielite.space/IMAGES/ConventionBranding.jpg') no-repeat center center fixed`,
   padding: '0',
   margin: '0',
@@ -43,7 +44,7 @@ export default function Home() {
       <Box>
         <Navbar />
         <BackDrop>
-          <Image src={conventionBackdrop} objectFit="cover" layout="fill" />
+          {/* <!-- <Image src={conventionBackdrop} objectFit="cover" layout="fill" alt="backgroundImage" /> --> */}
           <CenterContainer>
             <Container size="3" css={{ zIndex: '9999', alignItems: 'center', textAlign: 'center' }}>
               <Image src={conventionLogo} width="400" height="150" alt="CONVENTION" />
@@ -61,6 +62,7 @@ export default function Home() {
 
         <Hero />
         <MarketingSection />
+        <CaseStudies />
         <Footer />
       </Box>
     </>

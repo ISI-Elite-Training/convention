@@ -38,11 +38,12 @@ export const MarketingSection = () => {
           size="4"
           css={{
             color: '$slate2',
-            fontSize: '40px',
+            fontSize: '35px',
             fontFamily: '$brynasWide',
             fontWeight: '600',
             textAlign: 'center',
             paddingBottom: '10px',
+            letterSpacing: '0.06rem',
             '@sm': {
               fontSize: '26px',
               textAlign: 'left',
@@ -116,9 +117,10 @@ export const MarketingSection = () => {
                 }}
               >
                 <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
-                  SFX. 001
+                  SPEAKER 01
                 </Text>
               </Box>
+              {/* <!--
               <Image
                 className="color__swirl"
                 src="https://cdn.ady.systems/ady.images/one.png"
@@ -127,6 +129,7 @@ export const MarketingSection = () => {
                 alt="image"
                 objectPosition="absolute"
               />
+              --> */}
             </Card>
           </Box>
 
@@ -142,17 +145,19 @@ export const MarketingSection = () => {
                 }}
               >
                 <Text size="2" css={{ fontWeight: '800', lineHeight: '1.2' }}>
-                  INTERVAL. v001
+                  SPEAKER 02
                 </Text>
               </Box>
+              {/* <!--
               <Image
                 className="color__swirl"
-                src="https://cdn.ady.systems/ady.images/four.png"
+                src="https://cdn.ady.systems/ady.images/one.png"
                 layout="fill"
                 objectFit="cover"
                 alt="image"
                 objectPosition="absolute"
               />
+              --> */}
             </Card>
           </Box>
         </Grid>
