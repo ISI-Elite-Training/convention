@@ -4,15 +4,14 @@ import Link from 'next/link';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
-import { SpeakersSection } from '@/components/SpeakersSection';
-
+import { MarketingSection } from '@/components/MarketingSection';
 import { CaseStudies } from '@/components/CaseStudies';
 import { Box } from '@/system/box';
-import { Section } from '@/system';
 import { Heading } from '@/system/heading';
 import { Container } from '@/system/container';
 import { AtelierButton } from '@/system/custom/AtelierButton';
 import { VideoComponent } from '@/components/VideoComponent';
+import { SpeakersSection } from '@/components/SpeakersSection';
 
 import { styled } from 'stitches.config';
 import conventionLogo from '@/public/logo/convention.svg';
@@ -41,7 +40,7 @@ const CenterContainer = styled('div', {
   zIndex: '20',
 });
 
-export default function Home() {
+export default function Test() {
   return (
     <>
       <Box>
@@ -80,7 +79,6 @@ export default function Home() {
 
         <Hero />
         <SpeakersSection />
-
         <Footer />
       </Box>
     </>

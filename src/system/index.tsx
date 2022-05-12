@@ -18,6 +18,7 @@ export { Grid } from '@/system/design/grid';
 // misc..
 export { Avatar } from '@/system/design/Avatar';
 export { Card } from '@/system/design/Card';
+export { CardLight } from '@/system/design/CardLight';
 export { CustomLink } from '@/system/design/CustomLink';
 export { Separator } from '@/system/design/separator';
 export { Panel } from '@/system/design/panel';

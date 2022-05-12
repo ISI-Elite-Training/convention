@@ -7,10 +7,10 @@ export const LogoLink = styled('a', {
   position: 'relative',
 
   '@hover': {
-    color: '$slate9',
+    color: '$lime1',
     transition: '120ms color',
     '&:hover': {
-      color: '$hiContrast',
+      color: '$lime8',
     },
   },
 

@@ -3,8 +3,8 @@ import { Text } from '@/system/text';
 
 export const NewLink = styled('a', {
   alignItems: 'center',
-  fontFamily: '$brynasWide',
-  fontSize: '11px',
+  fontFamily: '$inter',
+  fontSize: '14px',
   fontWeight: '600',
   gap: '$1',
   flexShrink: 0,
