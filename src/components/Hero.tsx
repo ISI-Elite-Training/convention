@@ -81,7 +81,7 @@ export const Hero = () => {
               },
             }}
           >
-            Welcome.
+            Train for Life.
           </Heading>
 
           <Paragraph
@@ -111,8 +111,9 @@ export const Hero = () => {
               },
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lobortis scelerisque fermentum dui faucibus in ornare.
+            Join us for our inaugural ISI® Elite Training Annual Convention as we come together from coast to coast and recognize the
+            incredible individuals within our brand, celebrate our accomplishments, learn from experts in the field, and cast our vision to
+            the future.
           </Paragraph>
 
           <Flex

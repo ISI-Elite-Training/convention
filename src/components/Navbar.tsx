@@ -140,11 +140,11 @@ export const Navbar = () => {
                 },
               }}
             >
-              Speakers
+              Agenda
             </NewLink>
           </Link>
 
-          {/* <!-- Nav Link #3 --> */}
+          {/* <!-- Nav Link #3
           <Link href="/cover" passHref>
             <NewLink
               variant="subtle"
@@ -159,9 +159,10 @@ export const Navbar = () => {
                 },
               }}
             >
-              Agenda
+              Speakers
             </NewLink>
           </Link>
+          --> */}
 
           {/* <!-- Nav Link #4 --> */}
           <Link href="/cover" passHref>
@@ -178,7 +179,7 @@ export const Navbar = () => {
                 },
               }}
             >
-              Other
+              Travel
             </NewLink>
           </Link>
         </Flex>

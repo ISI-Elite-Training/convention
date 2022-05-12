@@ -34,7 +34,7 @@ export const CaseStudiesLight = () => {
         <Box css={{ mb: '$5' }}>
           <Caption css={{ mb: '$1' }}>Case studies</Caption>
           <Heading as="h2" size="3" css={{ color: '$slate2', maxWidth: 500 }}>
-            World-class teams use Radix to power their products
+            Meet Your Guest Speakers.
           </Heading>
         </Box>
 
@@ -42,7 +42,8 @@ export const CaseStudiesLight = () => {
           <CardLight variant="interactive" as="a" href="/case-studies/vercel">
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
-                <CaseStudyLogo variant="Vercel" />
+                {/*<CaseStudyLogo variant="Vercel" />*/}
+                <Heading size="3">Adam Rice</Heading>
               </Box>
               <TestimonialText css={{ color: '$gray12', mb: '$4' }}>
                 We’ve been able to focus on building solid user experiences on top of Radix Primitives. With UI components, there are just
@@ -51,7 +52,7 @@ export const CaseStudiesLight = () => {
               <Flex align="center" gap="2">
                 <Avatar size="3" src="/marketing/avatar-rauno-freiberg.jpg" aria-describedby="person1" />
                 <Text variant="gray" size="3" id="person1" css={{ color: '$gray9', lineHeight: 1.5 }}>
-                  Rauno Freiberg, UI Engineer at Vercel
+                  Adam Rice, Founder & CEO
                 </Text>
               </Flex>
             </Box>
@@ -68,7 +69,7 @@ export const CaseStudiesLight = () => {
               <Flex align="center" gap="2">
                 <Avatar size="3" src="/marketing/avatar-scott-hutcheson.png" aria-describedby="person2" />
                 <Text variant="gray" size="3" id="person2" css={{ color: '$gray9', lineHeight: 1.5 }}>
-                  Scott Hutcheson, Product Engineer at CodeSandbox
+                  Amanda Hall, Chief Operations Officer
                 </Text>
               </Flex>
             </Box>

@@ -45,6 +45,9 @@ export default function Home() {
   return (
     <>
       <Box>
+        <Head>
+          <title>Convention 2022 - ISI® Elite Training</title>
+        </Head>
         <Navbar />
         <BackDrop>
           <Image className="web_video" src={conventionVideo} objectFit="cover" layout="fill" alt="backgroundImage" />
