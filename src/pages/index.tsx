@@ -16,7 +16,7 @@ import { VideoComponent } from '@/components/VideoComponent';
 
 import { styled } from 'stitches.config';
 import conventionLogo from '@/public/logo/convention.svg';
-import conventionVideo from '@/public/img/WebVideo.gif';
+import conventionVideo from '@/public/img/charlotte_skyline.gif';
 
 const BackDrop = styled('div', {
   position: 'relative',
