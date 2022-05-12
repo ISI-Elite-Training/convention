@@ -10,13 +10,6 @@ export const button = css({
   alignItems: 'center',
   userSelect: 'none',
 
-  '&:disabled': {
-    backgroundColor: '$slate2',
-    boxShadow: 'inset 0 0 0 1px $colors$slate7',
-    color: '$slate8',
-    pointerEvents: 'none',
-  },
-
   // BASE STYLE
   position: 'relative',
   paddingLeft: '18px',
@@ -42,6 +35,22 @@ export const button = css({
   fontFamily: '$inter',
   color: '$white',
 
+  '&[data-custom-attribute]': {
+    // boxShadow: '0 0 0 3px $gray12',
+    boxShadow: 'inset 0 0 0 3px $colors$gray12',
+  },
+
+  '&[href]': {
+    cursor: 'pointer',
+  },
+
+  '&:disabled': {
+    backgroundColor: '$slate2',
+    boxShadow: 'inset 0 0 0 1px $colors$slate7',
+    color: '$slate8',
+    pointerEvents: 'none',
+  },
+
   '&:hover': {
     color: '$white',
     cursor: 'pointer',
@@ -58,27 +67,17 @@ export const button = css({
           color: '$white',
         },
       },
-      blue: {
-        backgroundColor: '$blue9',
-        color: '$white',
+      darkGray: {
+        borderRadius: '8px',
+        backgroundColor: '$gray12',
+        border: '2px solid $colors$gray12',
+        color: '#94E522',
 
         '&:hover': {
-          backgroundColor: '$blue8',
+          backgroundColor: '$gray9',
           color: '$white',
+          border: '2px solid $colors$gray10',
         },
-      },
-      sky: {
-        backgroundColor: '$sky9',
-        color: '$white',
-
-        '&:hover': {
-          backgroundColor: '$sky8',
-          color: '$white',
-        },
-      },
-      orange: {
-        backgroundColor: '$orange9',
-        color: '$white',
       },
       ghost: {
         backgroundColor: '$translucent',

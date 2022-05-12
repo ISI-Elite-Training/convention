@@ -2,8 +2,8 @@ import { styled } from 'stitches.config';
 
 export const CardLight = styled('div', {
   appearance: 'none',
-  border: '2px solid $lime9',
-  borderRadius: '16px',
+  border: '2px solid $gray11',
+  borderRadius: '10px',
   boxSizing: 'border-box',
   font: 'inherit',
   lineHeight: '1',

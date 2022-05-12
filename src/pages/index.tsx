@@ -22,7 +22,7 @@ const BackDrop = styled('div', {
   position: 'relative',
   minHeight: '100vh',
   minWidth: '100vw',
-  backgroundColor: '$gray12',
+  backgroundColor: '$sage3',
   // background: `url('https://spaces.isielite.space/IMAGES/ConventionBranding.jpg') no-repeat center center fixed`,
   padding: '0',
   margin: '0',
@@ -54,8 +54,8 @@ export default function Home() {
 
           <CenterContainer>
             <Container size="3" css={{ zIndex: '9999', alignItems: 'center', textAlign: 'center' }}>
-              <Image src={conventionLogo} width="400" height="150" alt="CONVENTION" />
-              <Heading size="3" css={{ color: '$slate2', paddingTop: '10px', paddingBottom: '0px' }}>
+              <Image src={conventionLogo} width="450" height="170" alt="CONVENTION" />
+              <Heading size="3" css={{ color: '$gray12', paddingTop: '10px', paddingBottom: '0px' }}>
                 AUGUST 08, 2022
               </Heading>
               <Heading
@@ -63,7 +63,7 @@ export default function Home() {
                 css={{
                   //fontSize: '14px',
                   fontWeight: '700',
-                  color: '$slate2',
+                  color: '$gray12',
                   paddingTop: '8px',
                   paddingBottom: '30px',
                   lineHeight: 'normal',
@@ -75,7 +75,7 @@ export default function Home() {
             </Container>
             <Container size="3">
               <Link href="https://eventbrite.com" passHref target="_blank" rel="no refferrer">
-                <AtelierButton color="lime">Register Now →</AtelierButton>
+                <AtelierButton color="darkGray">Register Now →</AtelierButton>
               </Link>
             </Container>
           </CenterContainer>
@@ -83,7 +83,7 @@ export default function Home() {
 
         <Hero />
         <SpeakersSection />
-
+        <Section size="3"></Section>
         <Footer />
       </Box>
     </>

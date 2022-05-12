@@ -32,35 +32,44 @@ export const CaseStudiesLight = () => {
     <Section css={{ paddingBottom: '120px' }}>
       <Container size="3">
         <Box css={{ mb: '$5' }}>
-          <Caption css={{ mb: '$1' }}>Case studies</Caption>
+          <Caption css={{ mb: '$1', color: '$gray12' }}>Case studies</Caption>
           <Heading as="h2" size="3" css={{ color: '$slate2', maxWidth: 500 }}>
             Meet Your Guest Speakers.
           </Heading>
         </Box>
 
-        <Grid columns={{ '@bp2': 2 }} gap="5" css={{ mb: '$6' }}>
+        <Grid columns={{ '@bp2': 3 }} gap="5" css={{ mb: '$6' }}>
+          {/* <!-- ADAM RICE --> */}
           <CardLight variant="interactive" as="a" href="/case-studies/vercel">
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
                 {/*<CaseStudyLogo variant="Vercel" />*/}
-                <Heading size="3">Adam Rice</Heading>
+                <Heading css={{ fontWeight: '700' }} size="2">
+                  Adam Rice
+                </Heading>
               </Box>
+
               <TestimonialText css={{ color: '$gray12', mb: '$4' }}>
-                We’ve been able to focus on building solid user experiences on top of Radix Primitives. With UI components, there are just
-                too many angles and rabbit holes to cover for product teams that wish to move quickly.
+                Radix has significantly improved the accessibility standard in our components. We spend far less time discussing and
+                implementing keyboard navigation, focus traps, and researching appropriate ARIA techniques for our components.
               </TestimonialText>
+
               <Flex align="center" gap="2">
                 <Avatar size="3" src="/marketing/avatar-rauno-freiberg.jpg" aria-describedby="person1" />
                 <Text variant="gray" size="3" id="person1" css={{ color: '$gray9', lineHeight: 1.5 }}>
-                  Adam Rice, Founder & CEO
+                  Founder & CEO
+                  <br />
+                  <strong>ISI® Elite Training</strong>
                 </Text>
               </Flex>
             </Box>
           </CardLight>
+          {/* <!-- AMANDA HALL --> */}
           <CardLight variant="interactive" as="a" href="/case-studies/codesandbox">
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
-                <CaseStudyLogo variant="CodeSandbox" />
+                {/*<CaseStudyLogo variant="Vercel" />*/}
+                <Heading size="3">Amanda Hall</Heading>
               </Box>
               <TestimonialText css={{ color: '$gray12', mb: '$4' }}>
                 Radix has significantly improved the accessibility standard in our components. We spend far less time discussing and
@@ -69,7 +78,30 @@ export const CaseStudiesLight = () => {
               <Flex align="center" gap="2">
                 <Avatar size="3" src="/marketing/avatar-scott-hutcheson.png" aria-describedby="person2" />
                 <Text variant="gray" size="3" id="person2" css={{ color: '$gray9', lineHeight: 1.5 }}>
-                  Amanda Hall, Chief Operations Officer
+                  Chief Operations Officer
+                  <br />
+                  <strong>ISI® Elite Training</strong>
+                </Text>
+              </Flex>
+            </Box>
+          </CardLight>
+          {/* <!-- GUEST --> */}
+          <CardLight variant="interactive" as="a" href="/case-studies/codesandbox">
+            <Box css={{ p: '$5' }}>
+              <Box css={{ mb: '$4' }}>
+                {/*<CaseStudyLogo variant="Vercel" />*/}
+                <Heading size="3">Guest Speaker</Heading>
+              </Box>
+              <TestimonialText css={{ color: '$gray12', mb: '$4' }}>
+                Radix has significantly improved the accessibility standard in our components. We spend far less time discussing and
+                implementing keyboard navigation, focus traps, and researching appropriate ARIA techniques for our components.
+              </TestimonialText>
+              <Flex align="center" gap="2">
+                <Avatar size="3" src="/marketing/avatar-scott-hutcheson.png" aria-describedby="person2" />
+                <Text variant="gray" size="3" id="person2" css={{ color: '$gray9', lineHeight: 1.5 }}>
+                  Position Title
+                  <br />
+                  <strong>Current Company</strong>
                 </Text>
               </Flex>
             </Box>

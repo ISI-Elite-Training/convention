@@ -13,5 +13,6 @@ export const Caption = styled(Text, {
   defaultVariants: {
     size: 3,
     variant: 'teal',
+    color: '$gray12',
   },
 });

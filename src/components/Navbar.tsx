@@ -91,7 +91,7 @@ export const Navbar = () => {
               },
             }}
           >
-            <Text css={{ color: '$slate2', fontSize: '14px', fontWeight: '700', lineHeight: '45px' }}>ISI® ELITE</Text>
+            <Text css={{ color: '$gray12', fontSize: '14px', fontWeight: '700', lineHeight: '45px' }}>ISI® ELITE</Text>
           </Box>
         </Link>
 
@@ -113,7 +113,7 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 marginRight: '$3',
-                color: '$slate2',
+                color: '$gray12',
                 '@sm': { marginRight: '$2' },
                 '&:hover': {
                   textDecoration: 'none',
@@ -131,7 +131,7 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 marginRight: '$3',
-                color: '$slate2',
+                color: '$gray12',
 
                 '@sm': { marginRight: '$2' },
                 '&:hover': {
@@ -144,33 +144,13 @@ export const Navbar = () => {
             </NewLink>
           </Link>
 
-          {/* <!-- Nav Link #3
-          <Link href="/cover" passHref>
-            <NewLink
-              variant="subtle"
-              css={{
-                display: 'none',
-                color: '$slate2',
-                mr: '$3',
-                '@bp2': { display: 'block', mr: '$3' },
-                '&:hover': {
-                  textDecoration: 'none',
-                  color: '$lime9',
-                },
-              }}
-            >
-              Speakers
-            </NewLink>
-          </Link>
-          --> */}
-
           {/* <!-- Nav Link #4 --> */}
           <Link href="/cover" passHref>
             <NewLink
               variant="subtle"
               css={{
                 display: 'none',
-                color: '$slate2',
+                color: '$gray12',
                 mr: '$3',
                 '@bp2': { display: 'block', mr: '$3' },
                 '&:hover': {

@@ -39,19 +39,20 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
+      {/* <!--
       <ThemeProvider
         disableTransitionOnChange
         attribute="class"
         value={{ light: 'light-theme', dark: darkTheme.className }}
-        defaultTheme="system"
+        defaultTheme="light-theme"
       >
-        <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-        </Head>
-        <Box css={{ backgroundColor: '$sage1', zIndex: '0' }}>
-          <Component {...pageProps} />
-        </Box>
-      </ThemeProvider>
+      --> */}
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+      </Head>
+      <Box css={{ backgroundColor: '$sage1', zIndex: '0' }}>
+        <Component {...pageProps} />
+      </Box>
     </>
   );
 };

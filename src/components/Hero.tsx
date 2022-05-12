@@ -51,13 +51,13 @@ export const Hero = () => {
         }}
       >
         <Container
-          size="2"
+          size="3"
           css={{
             backgroundColor: '$transparent',
             paddingTop: '140px',
             paddingBottom: '60px',
-            paddingLeft: '100px',
-            paddingRight: '100px',
+            paddingLeft: '150px',
+            paddingRight: '150px',
             '@sm': {
               paddingTop: '140px',
               paddingBottom: '100px',
@@ -73,7 +73,7 @@ export const Hero = () => {
               fontFamily: '$inter',
               fontWeight: '900',
               fontSize: '70px',
-              mb: '$2',
+              mb: '$3',
               textAlign: 'center',
               '@sm': {
                 textAlign: 'left',
@@ -87,6 +87,7 @@ export const Hero = () => {
           <Paragraph
             size="2"
             css={{
+              padding: '0',
               textAlign: 'center',
               fontSize: '18px',
               fontWeight: '500',
@@ -100,13 +101,13 @@ export const Hero = () => {
               '@bp2': {
                 // mx: 250,
                 ta: 'center',
-                mb: '60px',
+                mb: '30px',
                 lineHeight: '1.3',
               },
               '@bp3': {
                 //  mx: 300,
                 ta: 'center',
-                mb: '60px',
+                mb: '30px',
                 lineHeight: '1.3',
               },
             }}
@@ -127,17 +128,18 @@ export const Hero = () => {
             }}
           >
             <Link href="/shop" passHref>
-              <AtelierButton color="lime">
+              <AtelierButton color="darkGray">
                 <span>Buy tickets now</span>
                 {` `}
               </AtelierButton>
             </Link>
-
+            {/* <!--
             <Link href="https://github.com/AtelierDesign/atelier" passHref>
               <AtelierButton color="ghost">
                 <span>Learn more →</span>
               </AtelierButton>
             </Link>
+            --> */}
           </Flex>
         </Container>
       </Section>
