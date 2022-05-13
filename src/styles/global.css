@@ -22,3 +22,25 @@ ul {
 .web_video {
   opacity: 0.2;
 }
+
+.layout {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 3rem;
+}
+
+.video {
+  opacity: 0.3;
+  position: absolute;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

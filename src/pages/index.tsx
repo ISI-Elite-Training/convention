@@ -23,10 +23,13 @@ const BackDrop = styled('div', {
   minHeight: '100vh',
   minWidth: '100vw',
   backgroundColor: '$sage3',
-  // background: `url('https://spaces.isielite.space/IMAGES/ConventionBranding.jpg') no-repeat center center fixed`,
   padding: '0',
   margin: '0',
   zIndex: '1',
+
+  backdropFilter: 'blur(22px)',
+  WebkitBackdropFilter: 'blur(22px)',
+  // saturate: '200%',
 });
 
 const CenterContainer = styled('div', {
@@ -38,7 +41,7 @@ const CenterContainer = styled('div', {
   justifyContent: 'center',
   alignItems: 'center',
   height: '100vh',
-  zIndex: '20',
+  // zIndex: '20',
 });
 
 export default function Home() {
@@ -51,6 +54,7 @@ export default function Home() {
         <Navbar />
         <BackDrop>
           <Image className="web_video" src={conventionVideo} objectFit="cover" layout="fill" alt="backgroundImage" />
+          {/* <!-- <VideoComponent /> --> */}
 
           <CenterContainer>
             <Container size="3" css={{ zIndex: '9999', alignItems: 'center', textAlign: 'center' }}>
