@@ -39,9 +39,9 @@ export const FancyBackground = ({ children, ...other }: FancyBackgroundProps) =>
               radial-gradient(circle 800px at calc(50% - 600px) calc(100% - 100px), $pink3, $pink1, $$transparent)
             `,
 */
-            backgroundImage: 'linear-gradient(to bottom, $sage1, $sage8)',
+            backgroundImage: 'linear-gradient(to bottom, $sage1, $bronze7)',
             //background: '-webkit-linear-gradient(to bottom, #94e522, $gray12)',
-            background: 'linear-gradient(to bottom, $sage1, $sage8)',
+            background: 'linear-gradient(to bottom, $sage1, $bronze7)',
 
             // Safari transparency bug workaround
             $$transparent: '#FDFCFD00',

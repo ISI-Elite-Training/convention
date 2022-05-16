@@ -54,7 +54,7 @@ export const Hero = () => {
           size="3"
           css={{
             backgroundColor: '$transparent',
-            paddingTop: '140px',
+            paddingTop: '100px',
             paddingBottom: '60px',
             paddingLeft: '150px',
             paddingRight: '150px',

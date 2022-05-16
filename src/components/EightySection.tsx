@@ -9,7 +9,7 @@ const Eighty = styled('div', {
   width: '100vw',
   minWidth: '100vw',
   height: 'auto',
-  backgroundColor: '$sage8',
+  backgroundColor: '$bronze7',
   // backgroundImage:
   //  'linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%)',
   backgroundPosition: 'center',
