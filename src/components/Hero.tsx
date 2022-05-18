@@ -14,6 +14,7 @@ import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
 import { AtelierButton } from '@/system/custom/AtelierButton';
 import { GradientButton } from '@/system/custom/AtelierButton';
 import { TimeCode } from '@/components/TimeCode';
+import tflLogo from '@/public/logo/train.svg';
 
 // STITCHES STYLED
 import { styled } from 'stitches.config';
@@ -66,10 +67,26 @@ export const Hero = () => {
             },
           }}
         >
-          {/* <!-- Header or Logo (Large) --> */}
+          <Box
+            css={{
+              margin: 'auto',
+              textAlign: 'center',
+              alignItems: 'center',
+              padding: '0',
+              marginBottom: '0px',
+              '@sm': {
+                textAlign: 'left',
+                alignItems: 'left',
+              },
+            }}
+          >
+            <Image src={tflLogo} width="350px" height="120px" alt="Train for Life." />
+          </Box>
+          {/* <!-- Header or Logo (Large)
           <Heading
             size="4"
             css={{
+              color: '$sage1',
               fontFamily: '$inter',
               fontWeight: '900',
               fontSize: '70px',
@@ -81,8 +98,9 @@ export const Hero = () => {
               },
             }}
           >
-            Train for Life.
+            LOGO
           </Heading>
+          --> */}
 
           <Paragraph
             size="2"
@@ -92,7 +110,7 @@ export const Hero = () => {
               fontSize: '18px',
               fontWeight: '500',
               lineHeight: '1.4',
-              color: '$gray11',
+              color: '$gray9',
               mb: '30px',
               '@sm': {
                 textAlign: 'left',

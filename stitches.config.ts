@@ -211,6 +211,12 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       green500: 'hsl(148,60%,60%)',
       red500: 'hsl(352,100%,62%)',
 
+      // BrandColors
+      elite1: '#94e522',
+      elite2: '#f1f1f1',
+      elite3: '#adb6a1',
+      elite4: '#413a3c',
+
       // SuperLime..
       superLime0: '#ebffe9',
       superLime1: '#b8ffb3',

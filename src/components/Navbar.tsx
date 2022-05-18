@@ -183,7 +183,7 @@ export const Navbar = () => {
               <NewLink
                 variant="subtle"
                 css={{
-                  backgroundColor: '$lime9',
+                  backgroundColor: '$elite1',
                   display: 'none',
                   color: '$slate2',
                   borderRadius: '6px',

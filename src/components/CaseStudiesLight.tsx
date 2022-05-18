@@ -33,8 +33,8 @@ export const CaseStudiesLight = () => {
       <Container size="3">
         <Box css={{ mb: '$5' }}>
           <Caption css={{ mb: '$1', color: '$gray12' }}>Case studies</Caption>
-          <Heading as="h2" size="3" css={{ color: '$slate2', maxWidth: 500 }}>
-            Meet Your Guest Speakers.
+          <Heading as="h2" size="4" css={{ color: '$slate2', maxWidth: 700 }}>
+            Meet Your Speakers.
           </Heading>
         </Box>
 
@@ -48,11 +48,6 @@ export const CaseStudiesLight = () => {
                   Adam Rice
                 </Heading>
               </Box>
-
-              <TestimonialText css={{ color: '$gray12', mb: '$4' }}>
-                Radix has significantly improved the accessibility standard in our components. We spend far less time discussing and
-                implementing keyboard navigation, focus traps, and researching appropriate ARIA techniques for our components.
-              </TestimonialText>
 
               <Flex align="center" gap="2">
                 <Avatar size="3" src="/marketing/avatar-rauno-freiberg.jpg" aria-describedby="person1" />
@@ -69,12 +64,9 @@ export const CaseStudiesLight = () => {
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
                 {/*<CaseStudyLogo variant="Vercel" />*/}
-                <Heading size="3">Amanda Hall</Heading>
+                <Heading size="2">Amanda Hall</Heading>
               </Box>
-              <TestimonialText css={{ color: '$gray12', mb: '$4' }}>
-                Radix has significantly improved the accessibility standard in our components. We spend far less time discussing and
-                implementing keyboard navigation, focus traps, and researching appropriate ARIA techniques for our components.
-              </TestimonialText>
+
               <Flex align="center" gap="2">
                 <Avatar size="3" src="/marketing/avatar-scott-hutcheson.png" aria-describedby="person2" />
                 <Text variant="gray" size="3" id="person2" css={{ color: '$gray9', lineHeight: 1.5 }}>
@@ -90,12 +82,9 @@ export const CaseStudiesLight = () => {
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
                 {/*<CaseStudyLogo variant="Vercel" />*/}
-                <Heading size="3">Guest Speaker</Heading>
+                <Heading size="2">Guest Speaker</Heading>
               </Box>
-              <TestimonialText css={{ color: '$gray12', mb: '$4' }}>
-                Radix has significantly improved the accessibility standard in our components. We spend far less time discussing and
-                implementing keyboard navigation, focus traps, and researching appropriate ARIA techniques for our components.
-              </TestimonialText>
+
               <Flex align="center" gap="2">
                 <Avatar size="3" src="/marketing/avatar-scott-hutcheson.png" aria-describedby="person2" />
                 <Text variant="gray" size="3" id="person2" css={{ color: '$gray9', lineHeight: 1.5 }}>
