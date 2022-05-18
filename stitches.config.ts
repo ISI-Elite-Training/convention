@@ -216,6 +216,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       elite2: '#f1f1f1',
       elite3: '#adb6a1',
       elite4: '#413a3c',
+      elite5: '#FFFFFF',
 
       // SuperLime..
       superLime0: '#ebffe9',

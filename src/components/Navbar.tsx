@@ -185,8 +185,9 @@ export const Navbar = () => {
                 css={{
                   backgroundColor: '$elite1',
                   display: 'none',
-                  color: '$slate2',
+                  color: '$gray12',
                   borderRadius: '6px',
+                  border: '1px solid $elite4',
                   paddingTop: '6px',
                   paddingBottom: '6px',
                   paddingLeft: '10px',
