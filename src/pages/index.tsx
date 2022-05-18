@@ -27,7 +27,7 @@ const BackDrop = styled('div', {
   margin: '0',
   zIndex: '1',
 
-  backdropFilter: 'blur(22px)',
+  backdropFilter: 'blur(12px)',
   WebkitBackdropFilter: 'blur(22px)',
   // saturate: '200%',
 });

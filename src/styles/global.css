@@ -20,7 +20,7 @@ ul {
 }
 
 .web_video {
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 .layout {
@@ -34,7 +34,7 @@ ul {
 }
 
 .video {
-  opacity: 0.3;
+  opacity: 0.1;
   position: absolute;
   object-fit: cover;
   object-position: 50% 50%;
