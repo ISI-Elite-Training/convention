@@ -16,7 +16,7 @@ import { styled } from '@stitches/react';
 // Navigation ( Map )...
 const navigation = [
   {
-    name: 'Tickets',
+    name: 'Register',
     description: '',
     href: '/',
     // icon: IconOne,
@@ -24,25 +24,19 @@ const navigation = [
   {
     name: 'Speakers',
     description: '',
-    href: '/cover',
+    href: '/',
     // icon: IconTwo,
   },
   {
     name: 'Agenda',
     description: '',
-    href: 'https://github.com/chvndler',
+    href: '/',
     // icon: IconThree,
   },
   {
-    name: 'Learn More',
+    name: 'Travel',
     description: '',
-    href: 'https://github.com/chvndler',
-    // icon: IconThree,
-  },
-  {
-    name: 'Other',
-    description: '',
-    href: 'https://github.com/chvndler',
+    href: '/',
     // icon: IconThree,
   },
 ];
@@ -50,29 +44,31 @@ const navigation = [
 // SubMenu ( Map )...
 const submenu = [
   {
-    name: 'Twitter',
-    href: 'https://twitter.com/chv_ndler',
+    name: 'Instagram',
+    href: 'https://www.instagram.com/isielitetraining_/',
     // icon: IconOne,
   },
   {
-    name: 'Are.na',
-    href: 'https://www.are.na/chvndler-ch',
-    // icon: IconThree,
-  },
-  {
-    name: 'GitHub',
-    href: 'https://github.com/chvndler',
+    name: 'Facebook',
+    href: 'https://www.facebook.com/ISIEliteTraining',
     // icon: IconThree,
   },
   {
     name: 'Contact',
-    href: '/contact',
+    href: 'https://www.isielitetraining.com/contact-isi',
+    // icon: IconThree,
+  },
+  {
+    name: 'Terms & Privacy',
+    href: 'https://www.isielitetraining.com/privacy-policy',
     // icon: IconThree,
   },
 ];
 
 // DROPDOWN MENU STYLE
 const Dropdown = styled('div', {
+  alignItems: 'left',
+  textAlign: 'left',
   zIndex: '9999',
   position: 'absolute',
   top: '10',
@@ -84,13 +80,13 @@ const Dropdown = styled('div', {
   boxShadow: '$colors$shadowLight 0px 10px 38px -10px, $colors$shadowDark 0px 10px 20px -15px',
 
   minHeight: '50vh',
-  maxHeight: '75vh',
-  height: '75vh',
+  maxHeight: '60vh',
+  height: '60vh',
   width: 'auto',
-  paddingLeft: '25px',
-  paddingRight: '25px',
+  paddingLeft: '35px',
+  paddingRight: '35px',
   paddingBottom: '30vh',
-  paddingTop: '35px',
+  paddingTop: '45px',
   marginTop: '15px',
   marginRight: '10px',
   marginLeft: '10px',
@@ -153,14 +149,14 @@ const SubMenuBox = styled('div', {
 
 // MENU LINK STYLING
 const SubMenuLink = styled('div', {
-  fontSize: '12px',
+  fontSize: '13px',
   fontFamily: '$inter',
-  fontWeight: '600',
-  color: '$gray9',
+  fontWeight: '700',
+  textTransform: 'uppercase',
+  color: '$gray6',
   lineHeight: '0.8',
-  letterSpacing: '0.03rem',
+  letterSpacing: '-0.02rem',
   margin: 'auto',
-  // textTransform: 'uppercase',
 
   '&:hover': {
     color: '$gray10',
@@ -237,9 +233,9 @@ export const PopoverPanel = () => {
                     {/* <!-- END!! SubMenu Navigation --> */}
 
                     {/* <!-- Menu Footer --> */}
-                    <Box css={{ position: 'absolute', bottom: '0', paddingBottom: '30px' }}>
-                      <Text size="1" css={{ fontFamily: '$neuewide', fontWeight: '800', color: '$slate1' }}>
-                        <span>ATELIER®</span>
+                    <Box css={{ position: 'absolute', bottom: '0', paddingBottom: '45px' }}>
+                      <Text size="1" css={{ fontFamily: '$inter', fontWeight: '700', color: '$gray2' }}>
+                        <span>ISI® Elite Training</span>
                       </Text>
 
                       <Text
@@ -248,7 +244,7 @@ export const PopoverPanel = () => {
                           fontSize: '10px',
                           fontWeight: '500',
                           letterSpacing: '-0.03rem',
-                          color: '$slate1',
+                          color: '$gray8',
 
                           paddingTop: '4px',
                         }}

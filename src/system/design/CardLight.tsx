@@ -13,7 +13,7 @@ export const CardLight = styled('div', {
   verticalAlign: 'middle',
   WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
 
-  backgroundColor: '$slate3',
+  backgroundColor: '$gray6',
   display: 'block',
   textDecoration: 'none',
   color: 'inherit',

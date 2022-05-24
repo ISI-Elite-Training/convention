@@ -24,8 +24,8 @@ export const Section = styled('section', {
       },
       2: {
         py: '$5',
-        paddingLeft: '0px',
-        paddingRight: '0px',
+        paddingLeft: '22px',
+        paddingRight: '22px',
         margin: 'auto',
       },
       3: {

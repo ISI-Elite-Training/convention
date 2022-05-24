@@ -8,13 +8,12 @@ import { Box } from '@/system/box';
 import { Heading } from '@/system/heading';
 import { Flex } from '@/system/flex';
 import { Paragraph } from '@/system/paragraph';
-import { FancyBackground } from '@/components/FancyBackground';
 
 import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
 import { AtelierButton } from '@/system/custom/AtelierButton';
 import { GradientButton } from '@/system/custom/AtelierButton';
 import { TimeCode } from '@/components/TimeCode';
-import tflLogo from '@/public/logo/train.svg';
+// import tflLogo from '@/public/logo/train.svg';
 
 // STITCHES STYLED
 import { styled } from 'stitches.config';
@@ -42,9 +41,9 @@ const TimeDisplay = styled('div', {
   },
 });
 
-export const Hero = () => {
+export const LowerHero = () => {
   return (
-    <FancyBackground>
+    <>
       <Section
         size="2"
         css={{
@@ -76,59 +75,12 @@ export const Hero = () => {
               padding: '0',
               marginBottom: '0px',
               display: 'block',
-              '@xs': {
-                display: 'none !important',
-              },
-              '@sm': {
-                display: 'none !important',
-              },
             }}
           >
-            <Image src={tflLogo} width="350px" height="100px" alt="Train for Life." />
+            <Heading size="4" css={{ fontFamily: '$brynas', fontWeight: '900', letterSpacing: 'normal' }}>
+              ARE YOU READY?
+            </Heading>
           </Box>
-
-          <Box
-            css={{
-              display: 'none',
-              margin: 'auto',
-              marginLeft: '-4px',
-              textAlign: 'center',
-              alignItems: 'center',
-              padding: '0',
-              marginBottom: '0px',
-              '@xs': {
-                display: 'block !important',
-                textAlign: 'left',
-                alignItems: 'left',
-              },
-              '@sm': {
-                display: 'block !important',
-                textAlign: 'left',
-                alignItems: 'left',
-              },
-            }}
-          >
-            <Image src={tflLogo} width="280px" height="80px" alt="Train for Life." />
-          </Box>
-          {/* <!-- Header or Logo (Large)
-          <Heading
-            size="4"
-            css={{
-              color: '$sage1',
-              fontFamily: '$inter',
-              fontWeight: '900',
-              fontSize: '70px',
-              mb: '$3',
-              textAlign: 'center',
-              '@sm': {
-                textAlign: 'left',
-                fontSize: '44px',
-              },
-            }}
-          >
-            LOGO
-          </Heading>
-          --> */}
 
           <Paragraph
             size="2"
@@ -140,10 +92,6 @@ export const Hero = () => {
               lineHeight: '1.4',
               color: '$gray9',
               mb: '30px',
-              '@sm': {
-                textAlign: 'left',
-                fontSize: '16px',
-              },
               '@bp2': {
                 // mx: 250,
                 ta: 'center',
@@ -158,19 +106,18 @@ export const Hero = () => {
               },
             }}
           >
-            Join us for our inaugural ISI® Elite Training Annual Convention as we come together from coast to coast and recognize the
-            incredible individuals within our brand, celebrate our accomplishments, learn from experts in the field, and cast our vision to
-            the future.
+            Join us.
           </Paragraph>
 
-          <Flex
+          <Box
             css={{
-              backgroundColor: '$transparent',
-              zIndex: '2',
-              '@bp2': {
-                jc: 'center',
-                my: '$6',
-              },
+              margin: 'auto',
+              marginLeft: '-4px',
+              textAlign: 'center',
+              alignItems: 'center',
+              padding: '0',
+              marginBottom: '0px',
+              display: 'block',
             }}
           >
             <Link href="/shop" passHref>
@@ -186,9 +133,9 @@ export const Hero = () => {
               </AtelierButton>
             </Link>
             --> */}
-          </Flex>
+          </Box>
         </Container>
       </Section>
-    </FancyBackground>
+    </>
   );
 };

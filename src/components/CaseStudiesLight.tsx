@@ -9,30 +9,46 @@ import { LogoLink } from '@/components/LogoLink';
 
 import { styled } from 'stitches.config';
 
-const TestimonialText = styled(
-  Text,
-  {
-    lineHeight: 1.6,
-    letterSpacing: '-0.01em',
-    textIndent: '-0.577em',
-    fontVariantNumeric: 'normal',
-    hyphens: 'auto',
-    '&::before': { content: '“', mr: '0.07em' },
-    '&::after': { content: '”', ml: '0.07em' },
-  },
-  {
-    defaultVariants: {
-      size: 4,
-    },
-  },
-);
+/*
+const TestimonialText = styled(Text, {
+  color: '$gray9',
+
+  lineHeight: 'normal',
+  letterSpacing: '-0.01em',
+  textIndent: '-0.577em',
+  // fontVariantNumeric: 'normal',
+  // hyphens: 'auto',
+  '&::before': { content: '“', mr: '0.07em' },
+  '&::after': { content: '”', ml: '0.07em' },
+});
+*/
+const TestimonialText = styled('p', {
+  fontSize: '14px',
+  fontWeight: '400',
+  fontFamily: '$inter',
+  color: '$gray10',
+  lineHeight: 'normal',
+  letterSpacing: '-0.01em',
+  textIndent: '-0.577em',
+  // fontVariantNumeric: 'normal',
+  // hyphens: 'auto',
+  '&::before': { content: '“', mr: '0.07em' },
+  '&::after': { content: '”', ml: '0.07em' },
+});
+
+const Strong = styled(Text, {
+  fontSize: '14px',
+  fontFamily: '$inter',
+  fontWeight: '600 !important',
+  color: '$gray11 !important',
+});
 
 export const CaseStudiesLight = () => {
   return (
-    <Section css={{ paddingBottom: '120px' }}>
+    <Section size="2" css={{ paddingBottom: '120px' }}>
       <Container size="3">
         <Box css={{ mb: '$5' }}>
-          <Caption css={{ mb: '$1', color: '$gray12' }}>Case studies</Caption>
+          <Caption css={{ mb: '$2', color: '$gray7', fontWeight: '600' }}>Speaker Spotlight</Caption>
           <Heading as="h2" size="4" css={{ color: '$slate2', maxWidth: 700 }}>
             Meet Your Speakers.
           </Heading>
@@ -40,39 +56,45 @@ export const CaseStudiesLight = () => {
 
         <Grid columns={{ '@bp2': 3 }} gap="5" css={{ mb: '$6' }}>
           {/* <!-- ADAM RICE --> */}
-          <CardLight variant="interactive" as="a" href="/case-studies/vercel">
+          <CardLight variant="interactive" as="a" href="">
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
                 {/*<CaseStudyLogo variant="Vercel" />*/}
                 <Heading css={{ fontWeight: '700' }} size="2">
                   Adam Rice
                 </Heading>
+                <TestimonialText>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Massa placerat duis ultricies lacus sed turpis tincidunt id.
+                </TestimonialText>
               </Box>
 
               <Flex align="center" gap="2">
-                <Avatar size="3" src="/marketing/avatar-rauno-freiberg.jpg" aria-describedby="person1" />
+                <Avatar size="5" alt="AR" src="/img/adam.jpg" aria-describedby="Adam Rice" />
                 <Text variant="gray" size="3" id="person1" css={{ color: '$gray9', lineHeight: 1.5 }}>
                   Founder & CEO
-                  <br />
-                  <strong>ISI® Elite Training</strong>
+                  <Strong>ISI® Elite Training</Strong>
                 </Text>
               </Flex>
             </Box>
           </CardLight>
           {/* <!-- AMANDA HALL --> */}
-          <CardLight variant="interactive" as="a" href="/case-studies/codesandbox">
+          <CardLight variant="interactive" as="a" href="/">
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
                 {/*<CaseStudyLogo variant="Vercel" />*/}
                 <Heading size="2">Amanda Hall</Heading>
+                <TestimonialText>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Massa placerat duis ultricies lacus sed turpis tincidunt id.
+                </TestimonialText>
               </Box>
 
               <Flex align="center" gap="2">
-                <Avatar size="3" src="/marketing/avatar-scott-hutcheson.png" aria-describedby="person2" />
+                <Avatar size="5" alt="AH" src="/img/amanda.jpg" aria-describedby="Amanda Hall" />
                 <Text variant="gray" size="3" id="person2" css={{ color: '$gray9', lineHeight: 1.5 }}>
                   Chief Operations Officer
-                  <br />
-                  <strong>ISI® Elite Training</strong>
+                  <Strong>ISI® Elite Training</Strong>
                 </Text>
               </Flex>
             </Box>
@@ -82,15 +104,18 @@ export const CaseStudiesLight = () => {
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
                 {/*<CaseStudyLogo variant="Vercel" />*/}
-                <Heading size="2">Guest Speaker</Heading>
+                <Heading size="2">Martin Rooney</Heading>
+                <TestimonialText>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Massa placerat duis ultricies lacus sed turpis tincidunt id.
+                </TestimonialText>
               </Box>
 
               <Flex align="center" gap="2">
-                <Avatar size="3" src="/marketing/avatar-scott-hutcheson.png" aria-describedby="person2" />
+                <Avatar size="5" alt="MR" src="/img/martin_rooney.jpg" aria-describedby="Martin Rooney" />
                 <Text variant="gray" size="3" id="person2" css={{ color: '$gray9', lineHeight: 1.5 }}>
-                  Position Title
-                  <br />
-                  <strong>Current Company</strong>
+                  Founder
+                  <Strong>Training for Warriors</Strong>
                 </Text>
               </Flex>
             </Box>

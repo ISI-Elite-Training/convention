@@ -217,6 +217,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       elite3: '#adb6a1',
       elite4: '#413a3c',
       elite5: '#FFFFFF',
+      elite6: '#D1E3DD',
 
       // SuperLime..
       superLime0: '#ebffe9',
@@ -333,7 +334,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     sm: '(max-width: 750px)',
     md: '(max-width: 1200px)',
     lg: '(max-width: 2000px)',
-    xl: '(max-width: 100vw)',
+    xl: '(max-width: 6000px)',
     motion: '(prefers-reduced-motion)',
     hover: '(any-hover: hover)',
     dark: '(prefers-color-scheme: dark)',

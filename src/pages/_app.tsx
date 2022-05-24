@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { AppProps } from 'next/app';
+import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
 import { Box } from '@/system/box';
 import '@/styles/inter.css';

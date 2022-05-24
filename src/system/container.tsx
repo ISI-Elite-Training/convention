@@ -26,7 +26,7 @@ export const Container = styled('div', {
       },
       '3': {
         maxWidth: '1145px',
-        px: '18px',
+        px: '22px',
       },
       '4': {
         maxWidth: 'none',
