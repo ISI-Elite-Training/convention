@@ -9,8 +9,7 @@ import { Heading } from '@/system/heading';
 import { Flex } from '@/system/flex';
 import { Paragraph } from '@/system/paragraph';
 import { FancyBackground } from '@/components/FancyBackground';
-
-import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
+import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import { AtelierButton } from '@/system/custom/AtelierButton';
 import { GradientButton } from '@/system/custom/AtelierButton';
 import { TimeCode } from '@/components/TimeCode';
@@ -111,25 +110,6 @@ export const Hero = () => {
           >
             <Image src={tflLogo2} width="280px" height="80px" alt="Train for Life." />
           </Box>
-          {/* <!-- Header or Logo (Large)
-          <Heading
-            size="4"
-            css={{
-              color: '$sage1',
-              fontFamily: '$inter',
-              fontWeight: '900',
-              fontSize: '70px',
-              mb: '$3',
-              textAlign: 'center',
-              '@sm': {
-                textAlign: 'left',
-                fontSize: '44px',
-              },
-            }}
-          >
-            LOGO
-          </Heading>
-          --> */}
 
           <Paragraph
             size="2"
@@ -175,8 +155,9 @@ export const Hero = () => {
           >
             <Link href="/shop" passHref>
               <AtelierButton color="lime">
-                <span>Buy tickets now</span>
+                AGENDA {` `}
                 {` `}
+                <ExternalLinkIcon />
               </AtelierButton>
             </Link>
             {/* <!--

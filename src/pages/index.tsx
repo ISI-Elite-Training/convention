@@ -62,18 +62,18 @@ export default function Home() {
             <Container size="3" css={{ zIndex: '9999', alignItems: 'center', textAlign: 'center' }}>
               <Image src={conventionLogo} width="450" height="170" alt="CONVENTION" />
               <Heading size="3" css={{ color: '$gray12', paddingTop: '10px', paddingBottom: '0px' }}>
-                AUGUST 08, 2022
+                OCTOBER 14 - 16, 2022
               </Heading>
               <Heading
                 size="1"
                 css={{
-                  //fontSize: '14px',
-                  fontWeight: '700',
+                  fontFamily: '$inter',
+                  fontWeight: '600',
                   color: '$gray12',
                   paddingTop: '8px',
                   paddingBottom: '30px',
                   lineHeight: 'normal',
-                  textTransform: 'uppercase',
+                  //textTransform: 'uppercase',
                 }}
               >
                 Charlotte, NC
@@ -81,7 +81,7 @@ export default function Home() {
             </Container>
             <Container size="3">
               <Link href="https://eventbrite.com" passHref target="_blank" rel="no refferrer">
-                <AtelierButton color="darkGray">Register Now →</AtelierButton>
+                <AtelierButton color="gray">REGISTER NOW →</AtelierButton>
               </Link>
             </Container>
           </CenterContainer>

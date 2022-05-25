@@ -9,8 +9,11 @@ export const button = css({
   all: 'unset',
   alignItems: 'center',
   userSelect: 'none',
+  fontFamily: '$brynas',
 
   // BASE STYLE
+  display: 'flex',
+  flexDirection: 'row',
   position: 'relative',
   paddingLeft: '18px',
   paddingRight: '18px',
@@ -32,7 +35,6 @@ export const button = css({
   // BUTTON TEXT
   fontSize: '14px',
   fontWeight: '600',
-  fontFamily: '$inter',
   color: '$white',
 
   '&[data-custom-attribute]': {
@@ -61,9 +63,21 @@ export const button = css({
       lime: {
         backgroundColor: '$lime9',
         color: '$white',
+        fontFamily: '$brynas',
 
         '&:hover': {
           backgroundColor: '$lime8',
+          color: '$white',
+        },
+      },
+      gray: {
+        backgroundColor: '$gray11',
+        color: '$white',
+        fontFamily: '$brynas',
+        fontSize: '13px',
+
+        '&:hover': {
+          backgroundColor: '$gray10',
           color: '$white',
         },
       },

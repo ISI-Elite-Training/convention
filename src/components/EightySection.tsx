@@ -19,7 +19,10 @@ const Eighty = styled('div', {
   display: 'block',
   position: 'relative',
   margin: '0',
-  padding: '0',
+  paddingLeft: '0',
+  paddingRight: '0',
+  paddingTop: '50px',
+  paddingBottom: '0px',
 
   borderBottomWidth: '1px solid #FFF',
 

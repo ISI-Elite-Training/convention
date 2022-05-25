@@ -85,7 +85,7 @@ export const CaseStudiesLight = () => {
               <Flex align="center" gap="2">
                 <Avatar size="5" alt="AH" src="/img/amanda.jpg" aria-describedby="Amanda Hall" />
                 <Text variant="gray" size="3" id="person2" css={{ color: '$gray9', lineHeight: 1.5 }}>
-                  Chief Operations Officer
+                  Chief Operating Officer
                   <Strong>ISI® Elite Training</Strong>
                 </Text>
               </Flex>
@@ -112,8 +112,8 @@ export const CaseStudiesLight = () => {
 
         <Text variant="gray" css={{ mb: '$3' }}>
           <NextLink href="/case-studies" passHref>
-            <CustomLink variant="subtle" css={{ color: '$slate2', display: 'inline-flex', alignItems: 'center' }}>
-              And dozens more companies
+            <CustomLink variant="subtle" css={{ display: 'inline-flex', alignItems: 'center', color: '$gray7', fontWeight: '600' }}>
+              Sponsors
               <ArrowRightIcon />
             </CustomLink>
           </NextLink>
