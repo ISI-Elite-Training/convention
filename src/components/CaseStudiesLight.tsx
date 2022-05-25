@@ -56,17 +56,13 @@ export const CaseStudiesLight = () => {
 
         <Grid columns={{ '@bp2': 3 }} gap="5" css={{ mb: '$6' }}>
           {/* <!-- ADAM RICE --> */}
-          <CardLight variant="interactive" as="a" href="">
+          <CardLight variant="interactive">
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
                 {/*<CaseStudyLogo variant="Vercel" />*/}
                 <Heading css={{ fontWeight: '700' }} size="2">
                   Adam Rice
                 </Heading>
-                <TestimonialText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Massa placerat duis ultricies lacus sed turpis tincidunt id.
-                </TestimonialText>
               </Box>
 
               <Flex align="center" gap="2">
@@ -79,15 +75,11 @@ export const CaseStudiesLight = () => {
             </Box>
           </CardLight>
           {/* <!-- AMANDA HALL --> */}
-          <CardLight variant="interactive" as="a" href="/">
+          <CardLight variant="interactive">
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
                 {/*<CaseStudyLogo variant="Vercel" />*/}
                 <Heading size="2">Amanda Hall</Heading>
-                <TestimonialText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Massa placerat duis ultricies lacus sed turpis tincidunt id.
-                </TestimonialText>
               </Box>
 
               <Flex align="center" gap="2">
@@ -100,15 +92,11 @@ export const CaseStudiesLight = () => {
             </Box>
           </CardLight>
           {/* <!-- GUEST --> */}
-          <CardLight variant="interactive" as="a" href="/case-studies/codesandbox">
+          <CardLight variant="interactive">
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
                 {/*<CaseStudyLogo variant="Vercel" />*/}
                 <Heading size="2">Martin Rooney</Heading>
-                <TestimonialText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Massa placerat duis ultricies lacus sed turpis tincidunt id.
-                </TestimonialText>
               </Box>
 
               <Flex align="center" gap="2">
@@ -153,7 +141,7 @@ export const CaseStudiesLight = () => {
         <Grid flow="column" align="center" justify="start" gap="6">
           <NextLink href="/case-studies/atom-learning" passHref>
             <LogoLink>
-              <CaseStudyLogo variant="Atom Learning" width="86" />
+              <CaseStudyLogo variant="Atom Learning" width="135" />
             </LogoLink>
           </NextLink>
 
@@ -165,13 +153,13 @@ export const CaseStudiesLight = () => {
 
           <NextLink href="/case-studies/basement-studio" passHref>
             <LogoLink css={{ mb: -6 }}>
-              <CaseStudyLogo variant="basement.studio" width="120" />
+              <CaseStudyLogo variant="basement.studio" width="135" />
             </LogoLink>
           </NextLink>
 
           <NextLink href="/case-studies/linear" passHref>
             <LogoLink>
-              <CaseStudyLogo variant="Linear" width="105" />
+              <CaseStudyLogo variant="Linear" width="135" />
             </LogoLink>
           </NextLink>
 
@@ -183,13 +171,13 @@ export const CaseStudiesLight = () => {
 
           <NextLink href="/case-studies/supabase" passHref>
             <LogoLink css={{ mb: -2 }}>
-              <CaseStudyLogo variant="Supabase" width="140" />
+              <CaseStudyLogo variant="Supabase" width="135" />
             </LogoLink>
           </NextLink>
 
           <NextLink href="/case-studies/university-of-amsterdam" passHref>
             <LogoLink css={{ mt: 2 }}>
-              <CaseStudyLogo variant="University of Amsterdam" width="152" />
+              <CaseStudyLogo variant="University of Amsterdam" width="135" />
             </LogoLink>
           </NextLink>
 

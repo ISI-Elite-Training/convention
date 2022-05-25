@@ -55,7 +55,7 @@ export const LowerHero = () => {
           css={{
             backgroundColor: '$transparent',
             paddingTop: '50px',
-            paddingBottom: '50px',
+            paddingBottom: '10px',
             paddingLeft: '150px',
             paddingRight: '150px',
             '@sm': {
@@ -69,7 +69,6 @@ export const LowerHero = () => {
           <Box
             css={{
               margin: 'auto',
-              marginLeft: '-4px',
               textAlign: 'center',
               alignItems: 'center',
               padding: '0',
@@ -77,7 +76,10 @@ export const LowerHero = () => {
               display: 'block',
             }}
           >
-            <Heading size="4" css={{ fontFamily: '$brynas', fontWeight: '900', letterSpacing: 'normal' }}>
+            <Heading
+              size="4"
+              css={{ fontFamily: '$brynas', fontWeight: '900', letterSpacing: 'normal', lineHeight: '1.5', paddingBottom: '10px' }}
+            >
               ARE YOU READY?
             </Heading>
           </Box>
@@ -87,7 +89,7 @@ export const LowerHero = () => {
             css={{
               padding: '0',
               textAlign: 'center',
-              fontSize: '18px',
+              fontSize: '16px',
               fontWeight: '500',
               lineHeight: '1.4',
               color: '$gray9',
@@ -106,7 +108,8 @@ export const LowerHero = () => {
               },
             }}
           >
-            Join us.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            morbi tincidunt augue interdum velit euismod in pellentesque massa.
           </Paragraph>
 
           <Box
