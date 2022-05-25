@@ -15,6 +15,7 @@ import { AtelierButton } from '@/system/custom/AtelierButton';
 import { GradientButton } from '@/system/custom/AtelierButton';
 import { TimeCode } from '@/components/TimeCode';
 import tflLogo from '@/public/logo/train.svg';
+import tflLogo2 from '@/public/logo/train.svg';
 
 // STITCHES STYLED
 import { styled } from 'stitches.config';
@@ -108,7 +109,7 @@ export const Hero = () => {
               },
             }}
           >
-            <Image src={tflLogo} width="280px" height="80px" alt="Train for Life." />
+            <Image src={tflLogo2} width="280px" height="80px" alt="Train for Life." />
           </Box>
           {/* <!-- Header or Logo (Large)
           <Heading
@@ -158,9 +159,8 @@ export const Hero = () => {
               },
             }}
           >
-            Join us for our inaugural ISI® Elite Training Annual Convention as we come together from coast to coast and recognize the
-            incredible individuals within our brand, celebrate our accomplishments, learn from experts in the field, and cast our vision to
-            the future.
+            Join us for our ISI® Elite Training Annual Convention as we come together from coast to coast and recognize the incredible
+            individuals within our brand, celebrate our accomplishments, learn from experts in the field, and cast our vision to the future.
           </Paragraph>
 
           <Flex

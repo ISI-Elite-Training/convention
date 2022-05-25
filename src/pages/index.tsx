@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { AlternateNavbar } from '@/components/AlternateNavbar';
+// import { AlternateNavbar } from '@/components/AlternateNavbar';
+import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import { LowerHero } from '@/components/LowerHero';
@@ -52,7 +53,7 @@ export default function Home() {
         <Head>
           <title>Convention 2022 - ISI® Elite Training</title>
         </Head>
-        <AlternateNavbar />
+        <Navbar />
         <BackDrop>
           <Image className="web_video" src={conventionVideo} objectFit="cover" layout="fill" alt="backgroundImage" />
           {/* <!-- <VideoComponent /> --> */}

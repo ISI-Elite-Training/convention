@@ -7,7 +7,7 @@ import { Box } from '@/system/box';
 import { Flex } from '@/system/flex';
 import { Text } from '@/system/text';
 import { NewLink } from '@/system/newlink';
-import brandLogo from '@/public/logo/logo.svg';
+import brandLogo from '@/public/logo/brand_logo.svg';
 
 // FUNCTIONS
 import { PopoverPanel } from '@/components/PopoverPanel';

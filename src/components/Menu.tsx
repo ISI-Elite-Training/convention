@@ -6,8 +6,8 @@ import { CaretDownIcon } from '@radix-ui/react-icons';
 import { violet, lime, mauve, indigo, purple, blackA } from '@radix-ui/colors';
 
 type NavigationMenuComponentProps = React.PropsWithChildren<unknown>;
-type StyledTriggerWithCaretProps = React.PropsWithChildren<unknown>;
-type ContentListItemProps = React.PropsWithChildren<unknown>;
+// type StyledTriggerWithCaretProps = React.PropsWithChildren<unknown>;
+// type ContentListItemProps = React.PropsWithChildren<unknown>;
 type ContentListItemCalloutProps = React.PropsWithChildren<unknown>;
 
 /*
@@ -108,6 +108,7 @@ const StyledCaret = styled(CaretDownIcon, {
 
 const ref = React.createRef();
 
+/*
 // const StyledTriggerWithCaret = React.forwardRef(({ children, ...props }, forwardedRef) => (
 const StyledTriggerWithCaret = React.forwardRef(({ children, ...props }: StyledTriggerWithCaretProps, forwardedRef) => (
   <StyledTrigger {...props} ref={forwardedRef}>
@@ -115,7 +116,7 @@ const StyledTriggerWithCaret = React.forwardRef(({ children, ...props }: StyledT
     <StyledCaret aria-hidden />
   </StyledTrigger>
 ));
-
+*/
 const StyledLink = styled(NavigationMenuPrimitive.Link, {
   ...itemStyles,
   display: 'block',
@@ -249,7 +250,7 @@ const LinkText = styled('p', {
   fontWeight: 'initial',
 });
 
-const ContentListItem = React.forwardRef(({ children, ...props, ...other }: ContentListItemProps, forwardedRef) => (
+const ContentListItem = React.forwardRef(({ children, title, ...props }, forwardedRef) => (
   // const ContentListItem = React.forwardRef(({ children, title, ...props }, forwardedRef) => (
   <ListItem>
     <NavigationMenuLink
