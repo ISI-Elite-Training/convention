@@ -324,7 +324,7 @@ const ViewportPosition = styled('div', {
   perspective: '2000px',
 });
 
-export const NavigationMenuComponent = ({ children, ...other }: NavigationMenuComponentProps) => {
+export const NavigationMenuComponent = props => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
