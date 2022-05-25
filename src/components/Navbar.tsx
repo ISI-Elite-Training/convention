@@ -121,7 +121,7 @@ export const Navbar = () => {
                 },
               }}
             >
-              Tickets
+              Agenda
             </NewLink>
           </Link>
 
@@ -140,7 +140,7 @@ export const Navbar = () => {
                 },
               }}
             >
-              Agenda
+              Booking Accommodations
             </NewLink>
           </Link>
 
@@ -159,7 +159,7 @@ export const Navbar = () => {
                 },
               }}
             >
-              Travel
+              Register Now
             </NewLink>
           </Link>
         </Flex>
@@ -179,31 +179,6 @@ export const Navbar = () => {
             }}
           >
             {/* <!-- Nav Link #3 --> */}
-            <Link href="/cover" passHref>
-              <NewLink
-                variant="subtle"
-                css={{
-                  backgroundColor: '$elite1',
-                  display: 'none',
-                  color: '$gray12',
-                  borderRadius: '6px',
-                  border: '1px solid $elite4',
-                  paddingTop: '6px',
-                  paddingBottom: '6px',
-                  paddingLeft: '10px',
-                  paddingRight: '10px',
-                  mr: '$3',
-                  '@bp2': { display: 'block', mr: '$3' },
-                  '&:hover': {
-                    textDecoration: 'none',
-                    // backgroundColor: '$lime8',
-                    opacity: '0.9',
-                  },
-                }}
-              >
-                Register Now
-              </NewLink>
-            </Link>
           </Box>
 
           <PopoverPanel />
