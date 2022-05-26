@@ -28,11 +28,11 @@ const ContentSecurityPolicy = `
     default-src 'self';
     script-src 'self' 'unsafe-eval' 'unsafe-inline';
     child-src *.isielite.space;
-    style-src 'self' 'unsafe-inline' *.isielite.space spaces.isielite.space;
+    style-src 'self' 'unsafe-inline' *.isielite.space spaces.isielite.space *.ady.systems;
     img-src * blob: data:;
     media-src 'none';
     connect-src *;
-    font-src 'self' *.isielite.space spaces.isielite.space;
+    font-src 'self' *.isielite.space spaces.isielite.space *.ady.systems cdn.ady.systems;
 `;
 
 const securityHeaders = [
