@@ -5,7 +5,7 @@ import { NewLink } from '@/system/newlink';
 export const HeaderNav = () => {
   return (
     <>
-      <Link href="/blog" passHref>
+      <Link href="https://spaces.isielite.space/PDF/ISI%C2%AEEliteTraining_ConventionAgenda.pdf" passHref>
         <NewLink
           variant="subtle"
           css={{
@@ -15,7 +15,7 @@ export const HeaderNav = () => {
             '@sm': { marginRight: '$2' },
             '&:hover': {
               textDecoration: 'none',
-              color: '$lime9',
+              color: '$elite4',
             },
           }}
         >
@@ -24,7 +24,7 @@ export const HeaderNav = () => {
       </Link>
 
       {/* <!-- Nav Link #2 --> */}
-      <Link href="/showcase" passHref>
+      <Link href="https://www.eventbrite.com/e/342275965627" passHref>
         <NewLink
           variant="subtle"
           css={{
@@ -35,7 +35,7 @@ export const HeaderNav = () => {
             '@sm': { marginRight: '$2' },
             '&:hover': {
               textDecoration: 'none',
-              color: '$lime9',
+              color: '$elite4',
             },
           }}
         >
@@ -44,7 +44,7 @@ export const HeaderNav = () => {
       </Link>
 
       {/* <!-- Nav Link #4 --> */}
-      <Link href="/cover" passHref>
+      <Link href="/travel" passHref>
         <NewLink
           variant="subtle"
           css={{
@@ -55,7 +55,7 @@ export const HeaderNav = () => {
             '@bp2': { display: 'block', mr: '$3' },
             '&:hover': {
               textDecoration: 'none',
-              color: '$lime9',
+              color: '$elite4',
             },
           }}
         >

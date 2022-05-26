@@ -60,13 +60,36 @@ export const button = css({
 
   variants: {
     color: {
+      elite: {
+        backgroundColor: '$elite4',
+        color: '$white',
+        fontFamily: '$brynas',
+        fontSize: '13px',
+
+        '&:hover': {
+          backgroundColor: '$elite4',
+          opacity: '0.9',
+          color: '$white',
+        },
+      },
+      white: {
+        backgroundColor: '$elite2',
+        color: '$elite4',
+        fontFamily: '$brynas',
+        fontSize: '13px',
+
+        '&:hover': {
+          backgroundColor: '$elite2',
+          color: '$elite4',
+        },
+      },
       lime: {
-        backgroundColor: '$lime9',
+        backgroundColor: '$elite1',
         color: '$white',
         fontFamily: '$brynas',
 
         '&:hover': {
-          backgroundColor: '$lime8',
+          backgroundColor: '$elite1',
           color: '$white',
         },
       },

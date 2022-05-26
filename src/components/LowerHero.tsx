@@ -56,7 +56,14 @@ export const LowerHero = () => {
             >
               <Heading
                 size="4"
-                css={{ fontFamily: '$brynas', fontWeight: '900', letterSpacing: 'normal', lineHeight: '1.5', paddingBottom: '10px' }}
+                css={{
+                  color: '$elite4',
+                  fontFamily: '$brynas',
+                  fontWeight: '900',
+                  letterSpacing: 'normal',
+                  lineHeight: '1.5',
+                  paddingBottom: '10px',
+                }}
               >
                 TEAM ON THREE!
               </Heading>
@@ -101,7 +108,7 @@ export const LowerHero = () => {
               }}
             >
               <Link href="https://eventbrite.com" passHref>
-                <AtelierButton color="gray">
+                <AtelierButton color="white">
                   REGISTER NOW {` `}
                   {` `}
                   <ExternalLinkIcon />

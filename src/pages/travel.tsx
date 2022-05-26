@@ -46,50 +46,18 @@ const CenterContainer = styled('div', {
   // zIndex: '20',
 });
 
-export default function Home() {
+export default function Travel() {
   return (
     <>
-      <Box>
+      <Box css={{ bc: '$elite2' }}>
         <Head>
           <title>Convention 2022 - ISI® Elite Training</title>
         </Head>
         <Navbar />
-        <BackDrop>
-          <Image className="web_video" src={conventionVideo} objectFit="cover" layout="fill" alt="backgroundImage" />
-          {/* <!-- <VideoComponent /> --> */}
 
-          <CenterContainer>
-            <Container size="3" css={{ zIndex: '9999', alignItems: 'center', textAlign: 'center' }}>
-              <Image src={conventionLogo} width="450" height="170" alt="CONVENTION" />
-              <Heading size="3" css={{ fontFamily: '$brynas', color: '$elite4', paddingTop: '0px', paddingBottom: '0px' }}>
-                OCTOBER 14 - 16, 2022
-              </Heading>
-              <Heading
-                size="1"
-                css={{
-                  color: '$elite4',
-                  fontFamily: '$brynas',
-                  fontWeight: '600',
-                  paddingTop: '8px',
-                  paddingBottom: '30px',
-                  lineHeight: 'normal',
-                  //textTransform: 'uppercase',
-                }}
-              >
-                CHARLOTTE, NC
-              </Heading>
-            </Container>
-            <Container size="3">
-              <Link href="https://eventbrite.com" passHref target="_blank" rel="no refferrer">
-                <AtelierButton color="elite">REGISTER NOW →</AtelierButton>
-              </Link>
-            </Container>
-          </CenterContainer>
-        </BackDrop>
-
-        <Hero />
-        <SpeakersSection />
-        <LowerHero />
+        <CenterContainer>
+          <Hero />
+        </CenterContainer>
 
         <Footer />
       </Box>
