@@ -90,7 +90,32 @@ export default function Home() {
         <Hero />
         <SpeakersSection />
         <LowerHero />
-        <Section size="3"></Section>
+
+        <Section css={{ backgroundColor: '$elite1' }}>
+          <Container
+            size="3"
+            css={{
+              textAlign: 'center',
+              alignItems: 'center',
+              backgroundColor: '$elite1',
+              paddingTop: '50px',
+              paddingBottom: '10px',
+              paddingLeft: '150px',
+              paddingRight: '150px',
+              '@sm': {
+                paddingTop: '20px',
+                paddingBottom: '30px',
+                paddingLeft: '0px',
+                paddingRight: '0px',
+              },
+            }}
+          >
+            <Heading size="2" css={{ fontFamily: '$brynas' }}>
+              FREQUENTLY ASKED
+            </Heading>
+          </Container>
+        </Section>
+
         <Footer />
       </Box>
     </>

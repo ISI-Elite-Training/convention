@@ -18,127 +18,99 @@ import { TimeCode } from '@/components/TimeCode';
 // STITCHES STYLED
 import { styled } from 'stitches.config';
 
-const TimeDisplay = styled('div', {
-  position: 'relative',
-  alignItems: 'center',
-  textAlign: 'center',
-  margin: 'auto',
-  paddingBottom: '20px',
-  fontFamily: '$jetbrain',
-  fontSize: '13px',
-  fontWeight: '700',
-  color: '$gray12',
-  zIndex: '200',
-  lineHeight: '1',
-  userSelect: 'none',
-  WebkitUserSelect: 'none',
-  '@sm': {
-    alignItems: 'left',
-    textAlign: 'left',
-  },
-  '&:hover': {
-    cursor: 'auto',
-  },
-});
-
 export const LowerHero = () => {
   return (
     <>
-      <Section
-        size="2"
-        css={{
-          backgroundColor: '$transparent',
-        }}
-      >
-        <Container
-          size="3"
+      <Box css={{ backgroundColor: '$elite1' }}>
+        <Section
+          size="2"
           css={{
-            backgroundColor: '$transparent',
-            paddingTop: '50px',
-            paddingBottom: '10px',
-            paddingLeft: '150px',
-            paddingRight: '150px',
-            '@sm': {
-              paddingTop: '20px',
-              paddingBottom: '30px',
-              paddingLeft: '0px',
-              paddingRight: '0px',
-            },
+            backgroundColor: '$elite1',
           }}
         >
-          <Box
+          <Container
+            size="3"
             css={{
-              margin: 'auto',
-              textAlign: 'center',
-              alignItems: 'center',
-              padding: '0',
-              marginBottom: '0px',
-              display: 'block',
+              backgroundColor: '$elite1',
+              paddingTop: '50px',
+              paddingBottom: '10px',
+              paddingLeft: '150px',
+              paddingRight: '150px',
+              '@sm': {
+                paddingTop: '20px',
+                paddingBottom: '30px',
+                paddingLeft: '0px',
+                paddingRight: '0px',
+              },
             }}
           >
-            <Heading
-              size="4"
-              css={{ fontFamily: '$brynas', fontWeight: '900', letterSpacing: 'normal', lineHeight: '1.5', paddingBottom: '10px' }}
+            <Box
+              css={{
+                margin: 'auto',
+                textAlign: 'center',
+                alignItems: 'center',
+                padding: '0',
+                marginBottom: '0px',
+                display: 'block',
+              }}
             >
-              ARE YOU READY?
-            </Heading>
-          </Box>
+              <Heading
+                size="4"
+                css={{ fontFamily: '$brynas', fontWeight: '900', letterSpacing: 'normal', lineHeight: '1.5', paddingBottom: '10px' }}
+              >
+                TEAM ON THREE!
+              </Heading>
+            </Box>
 
-          <Paragraph
-            size="2"
-            css={{
-              padding: '0',
-              textAlign: 'center',
-              fontSize: '16px',
-              fontWeight: '500',
-              lineHeight: '1.4',
-              color: '$gray9',
-              mb: '30px',
-              '@bp2': {
-                // mx: 250,
-                ta: 'center',
+            <Paragraph
+              size="2"
+              css={{
+                padding: '0',
+                textAlign: 'center',
+                fontSize: '20px',
+                fontWeight: '700',
+                lineHeight: '1.4',
+                color: '$white',
                 mb: '30px',
-                lineHeight: '1.3',
-              },
-              '@bp3': {
-                //  mx: 300,
-                ta: 'center',
-                mb: '30px',
-                lineHeight: '1.3',
-              },
-            }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            morbi tincidunt augue interdum velit euismod in pellentesque massa.
-          </Paragraph>
+                '@bp2': {
+                  // mx: 250,
+                  ta: 'center',
+                  mb: '30px',
+                  lineHeight: '1.3',
+                },
+                '@sm': {
+                  fontSize: '16px',
+                  ta: 'center',
+                  mb: '30px',
+                  lineHeight: '0',
+                },
+              }}
+            >
+              Get ready to train for life, see you in the Queen City!
+            </Paragraph>
 
-          <Box
-            css={{
-              margin: 'auto',
-              marginLeft: '-4px',
-              textAlign: 'center',
-              alignItems: 'center',
-              padding: '0',
-              marginBottom: '0px',
-              display: 'block',
-            }}
-          >
-            <Link href="/shop" passHref>
-              <AtelierButton color="lime">
-                <span>Buy tickets now</span>
-                {` `}
-              </AtelierButton>
-            </Link>
-            {/* <!--
-            <Link href="https://github.com/AtelierDesign/atelier" passHref>
-              <AtelierButton color="ghost">
-                <span>Learn more →</span>
-              </AtelierButton>
-            </Link>
-            --> */}
-          </Box>
-        </Container>
-      </Section>
+            <Flex
+              css={{
+                backgroundColor: '$transparent',
+                zIndex: '2',
+                justifyContent: 'center',
+                paddingBottom: '40px',
+                '@sm': {
+                  paddingBottom: '30px',
+                },
+              }}
+            >
+              <Link href="https://eventbrite.com" passHref>
+                <AtelierButton color="gray">
+                  REGISTER NOW {` `}
+                  {` `}
+                  <ExternalLinkIcon />
+                </AtelierButton>
+              </Link>
+            </Flex>
+          </Container>
+        </Section>
+      </Box>
     </>
   );
 };

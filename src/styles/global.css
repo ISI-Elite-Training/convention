@@ -1,5 +1,6 @@
 html,
 body {
+  scroll-behavior: smooth !important;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
@@ -20,7 +21,7 @@ ul {
 }
 
 .web_video {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .layout {
@@ -34,7 +35,7 @@ ul {
 }
 
 .video {
-  opacity: 0.1;
+  opacity: 0.3;
   position: absolute;
   object-fit: cover;
   object-position: 50% 50%;
@@ -43,4 +44,9 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.speaker_card_image {
+  z-index: 1 !important;
+  border-radius: 8px !important;
 }

@@ -1,6 +1,7 @@
 import { styled } from 'stitches.config';
 
 export const CardLight = styled('div', {
+  zIndex: '4',
   appearance: 'none',
   border: '2px solid $gray11',
   borderRadius: '10px',
@@ -18,7 +19,6 @@ export const CardLight = styled('div', {
   textDecoration: 'none',
   color: 'inherit',
   flexShrink: 0,
-  // borderRadius: '$3',
   position: 'relative',
 
   '&::before': {

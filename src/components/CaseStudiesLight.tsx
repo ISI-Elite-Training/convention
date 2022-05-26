@@ -141,13 +141,13 @@ export const CaseStudiesLight = () => {
         <Grid flow="column" align="center" justify="start" gap="6">
           <NextLink href="/case-studies/atom-learning" passHref>
             <LogoLink>
-              <CaseStudyLogo variant="Atom Learning" width="135" />
+              <CaseStudyLogo variant="Atelier" width="135" />
             </LogoLink>
           </NextLink>
 
-          <NextLink href="/case-studies/basedash" passHref>
+          <NextLink href="https://inbodyusa.com" passHref>
             <LogoLink>
-              <CaseStudyLogo variant="Basedash" width="135" />
+              <CaseStudyLogo variant="InBody" width="125" />
             </LogoLink>
           </NextLink>
 
@@ -160,24 +160,6 @@ export const CaseStudiesLight = () => {
           <NextLink href="/case-studies/linear" passHref>
             <LogoLink>
               <CaseStudyLogo variant="Linear" width="135" />
-            </LogoLink>
-          </NextLink>
-
-          <NextLink href="/case-studies/liveblocks" passHref>
-            <LogoLink css={{ mb: -3 }}>
-              <CaseStudyLogo variant="Liveblocks" width="135" />
-            </LogoLink>
-          </NextLink>
-
-          <NextLink href="/case-studies/supabase" passHref>
-            <LogoLink css={{ mb: -2 }}>
-              <CaseStudyLogo variant="Supabase" width="135" />
-            </LogoLink>
-          </NextLink>
-
-          <NextLink href="/case-studies/university-of-amsterdam" passHref>
-            <LogoLink css={{ mt: 2 }}>
-              <CaseStudyLogo variant="University of Amsterdam" width="135" />
             </LogoLink>
           </NextLink>
 

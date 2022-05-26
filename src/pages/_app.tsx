@@ -16,7 +16,7 @@ const globalStyles = globalCss(reset, {
     margin: 0,
     padding: 0,
     overflowX: 'hidden',
-    backgroundColor: '$sage1',
+    backgroundColor: '$elite1',
 
     minHeight: '-webkit-fill-available',
   },
@@ -24,7 +24,7 @@ const globalStyles = globalCss(reset, {
     margin: 0,
     color: '$hiContrast',
     // backgroundColor: '$loContrast',
-    backgroundColor: '$sage1',
+    backgroundColor: '$elite1',
     fontFamily: '$inter',
     WebkitFontSmoothing: 'antialiased',
     MozOsxFontSmoothing: 'grayscale',
