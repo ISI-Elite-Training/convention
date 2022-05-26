@@ -86,7 +86,7 @@ export const LowerHero = () => {
                 },
               }}
             >
-              Get ready to train for life, see you in the Queen City!
+              Get ready to Train for Life, see you in the Queen City!
             </Paragraph>
 
             <Flex

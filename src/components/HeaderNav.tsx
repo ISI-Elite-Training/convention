@@ -11,6 +11,7 @@ export const HeaderNav = () => {
           css={{
             marginRight: '$3',
             color: '$gray12',
+            fontWeight: '800',
             '@sm': { marginRight: '$2' },
             '&:hover': {
               textDecoration: 'none',
@@ -18,7 +19,7 @@ export const HeaderNav = () => {
             },
           }}
         >
-          Agenda
+          AGENDA
         </NewLink>
       </Link>
 
@@ -29,6 +30,7 @@ export const HeaderNav = () => {
           css={{
             marginRight: '$3',
             color: '$gray12',
+            fontWeight: '800',
 
             '@sm': { marginRight: '$2' },
             '&:hover': {
@@ -37,7 +39,7 @@ export const HeaderNav = () => {
             },
           }}
         >
-          Booking Accommodations
+          BOOK ACCOMMODATIONS
         </NewLink>
       </Link>
 
@@ -49,6 +51,7 @@ export const HeaderNav = () => {
             display: 'none',
             color: '$gray12',
             mr: '$3',
+            fontWeight: '800',
             '@bp2': { display: 'block', mr: '$3' },
             '&:hover': {
               textDecoration: 'none',
@@ -56,7 +59,7 @@ export const HeaderNav = () => {
             },
           }}
         >
-          Register Now
+          REGISTER NOW
         </NewLink>
       </Link>
     </>

@@ -76,7 +76,7 @@ export default function Home() {
                   //textTransform: 'uppercase',
                 }}
               >
-                Charlotte, NC
+                CHARLOTTE, NC
               </Heading>
             </Container>
             <Container size="3">

@@ -16,19 +16,19 @@ import { styled } from '@stitches/react';
 // Navigation ( Map )...
 const navigation = [
   {
-    name: 'Register',
+    name: 'AGENDA',
     description: '',
     href: '/',
     // icon: IconOne,
   },
   {
-    name: 'Speakers',
+    name: 'TRAVEL',
     description: '',
     href: '/',
     // icon: IconTwo,
   },
   {
-    name: 'Agenda',
+    name: 'REGISTER NOW',
     description: '',
     href: '/',
     // icon: IconThree,
