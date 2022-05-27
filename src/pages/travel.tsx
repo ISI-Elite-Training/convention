@@ -215,7 +215,7 @@ export default function Travel() {
                     css={{ color: '$slate11', mr: '-$1' }}
                     aria-label="Copy the install snippet to Clipboard"
                     onClick={() => {
-                      copy('npm install @stitches/react');
+                      copy('ISI');
                       setHasCopied(true);
                     }}
                   >

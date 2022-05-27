@@ -128,7 +128,7 @@ export const SpeakerCardFull = () => {
                 zIndex: '1',
               }}
             >
-              <Image className="speaker_card_image" src="/img/adam_full.png" alt="AdamFull" objectFit="cover" layout="fill" />
+              <Image className="speaker_card_image" src="/img/adam_rice.jpg" alt="AdamFull" objectFit="cover" layout="fill" />
             </Box>
           </SpeakerCard>
           {/* <!-- AMANDA HALL --> */}
@@ -161,7 +161,7 @@ export const SpeakerCardFull = () => {
                 zIndex: '1',
               }}
             >
-              <Image className="speaker_card_image" src="/img/amanda_full.png" alt="AdamFull" objectFit="cover" layout="fill" />
+              <Image className="speaker_card_image" src="/img/amanda_hall.jpg" alt="AmandaFull" objectFit="cover" layout="fill" />
             </Box>
           </SpeakerCard>
           {/* <!-- GUEST --> */}
