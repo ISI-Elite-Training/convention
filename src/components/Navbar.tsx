@@ -70,6 +70,7 @@ export const Navbar = () => {
           </Box>
         </Link>
 
+        {/* <!-- MOBILE LOGO --> */}
         <Box
           as="a"
           css={{
@@ -89,24 +90,31 @@ export const Navbar = () => {
             },
             '@sm': {
               display: 'block',
-              width: '60%',
+              width: 'auto',
               // maxWidth: '60%',
               ml: '0',
               //  display: 'inline-flex',
               textDecoration: 'none',
+
+              '&:hover': {
+                cursor: 'pointer',
+              },
             },
             '@xs': {
               display: 'block',
-              width: '60%',
+              width: 'auto',
               // maxWidth: '60%',
               ml: '0',
               //  display: 'inline-flex',
               textDecoration: 'none',
+              '&:hover': {
+                cursor: 'pointer',
+              },
             },
           }}
         >
           <Link href="/" passHref>
-            <Image src={brandLogo} width="160px" height="50px" alt="ISI® Elite Training" />
+            <Image src={brandLogo} width="180px" height="50px" alt="ISI® Elite Training" />
           </Link>
         </Box>
 

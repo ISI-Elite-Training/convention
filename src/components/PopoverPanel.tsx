@@ -74,8 +74,8 @@ const Dropdown = styled('div', {
   boxShadow: '$colors$shadowLight 0px 10px 38px -10px, $colors$shadowDark 0px 10px 20px -15px',
 
   minHeight: '50vh',
-  maxHeight: '90vh',
-  height: '90vh',
+  maxHeight: '100vh',
+  height: '80vh',
   width: 'auto',
   paddingLeft: '25px',
   paddingRight: '25px',
@@ -171,6 +171,7 @@ export const PopoverPanel = () => {
                 css={{
                   display: 'none',
                   '@sm': {
+                    zIndex: '99999',
                     display: 'block',
                   },
                 }}
@@ -225,28 +226,6 @@ export const PopoverPanel = () => {
                       ))}
                     </SubMenuContainer>
                     {/* <!-- END!! SubMenu Navigation --> */}
-
-                    {/* <!-- Menu Footer --> */}
-                    <Box css={{ position: 'absolute', bottom: '0', paddingBottom: '45px' }}>
-                      <Text size="1" css={{ fontFamily: '$inter', fontWeight: '700', color: '$gray2' }}>
-                        <span>ISI® Elite Training</span>
-                      </Text>
-
-                      <Text
-                        css={{
-                          fontFamily: '$inter',
-                          fontSize: '10px',
-                          fontWeight: '500',
-                          letterSpacing: '-0.03rem',
-                          color: '$gray8',
-
-                          paddingTop: '4px',
-                        }}
-                      >
-                        <span>© 2022 All Rights Reserved.</span>
-                      </Text>
-                    </Box>
-                    {/* <!-- End Menu Footer --> */}
                   </div>
                 </Dropdown>
               </Popover.Panel>
