@@ -82,7 +82,7 @@ export const Footer = () => {
             },
           }}
         >
-          <Link href="https://twitter.com/chv_ndler" passHref>
+          <Link href="https://www.instagram.com/isielitetraining_/" passHref>
             <NewLink
               target="_blank"
               rel="norefferer"
@@ -102,7 +102,7 @@ export const Footer = () => {
             </NewLink>
           </Link>
 
-          <Link href="https://twitter.com/chv_ndler" passHref>
+          <Link href="https://twitter.com/ISIeliteHQ" passHref>
             <NewLink
               target="_blank"
               rel="norefferer"
