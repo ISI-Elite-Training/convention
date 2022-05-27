@@ -112,7 +112,7 @@ export const SpeakerCardFull = () => {
             >
               <SpeakerName>Adam Rice</SpeakerName>
               <SpeakerDescription>
-                <Text id="person2" css={{ color: '$elite4', lineHeight: 1.5 }}>
+                <Text id="person1" css={{ color: '$gray9', lineHeight: 1.5 }}>
                   Founder & CEO
                   <Strong>ISI® Elite Training</Strong>
                 </Text>
@@ -145,7 +145,7 @@ export const SpeakerCardFull = () => {
             >
               <SpeakerName>Amanda Hall</SpeakerName>
               <SpeakerDescription>
-                <Text id="person2" css={{ color: '$elite4', lineHeight: 1.5 }}>
+                <Text id="person2" css={{ color: '$gray9', lineHeight: 1.5 }}>
                   Chief Operating Officer
                   <Strong>ISI® Elite Training</Strong>
                 </Text>
@@ -178,7 +178,7 @@ export const SpeakerCardFull = () => {
             >
               <SpeakerName>Martin Rooney</SpeakerName>
               <SpeakerDescription>
-                <Text id="person2" css={{ color: '$elite4', lineHeight: 1.5 }}>
+                <Text id="person3" css={{ color: '$gray9', lineHeight: 1.5 }}>
                   Founder
                   <Strong>Training for Warriors</Strong>
                 </Text>

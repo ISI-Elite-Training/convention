@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,11 +12,14 @@ import { Caption } from '@/components/Caption';
 import { CaseStudies } from '@/components/CaseStudies';
 import { Box } from '@/system/box';
 import { Section } from '@/system';
-import { Heading, Paragraph, Flex } from '@/system';
+import { Heading, Paragraph, Flex, Text } from '@/system';
 import { Container } from '@/system/container';
-import { ExternalLinkIcon, RocketIcon, CaretRightIcon } from '@radix-ui/react-icons';
+import { ExternalLinkIcon, RocketIcon, CaretRightIcon, CopyIcon, CheckIcon } from '@radix-ui/react-icons';
 import { AtelierButton } from '@/system/custom/AtelierButton';
 import { ImageSlider } from '@/components/ImageSlider';
+import { IconButton } from '@/system/custom/IconButton';
+
+import copy from 'copy-to-clipboard';
 
 import canopyImage from '@/public/img/canopy.jpg';
 
@@ -23,13 +27,14 @@ import { styled } from 'stitches.config';
 
 const BackDrop = styled('div', {
   position: 'relative',
-  minHeight: 'calc(100vh - 50px)',
-  // minHeight: '100vh',
+  //minHeight: 'calc(100vh - 50px)',
+  minHeight: '100vh',
   // minWidth: '100vw',
   backgroundColor: '$elite2',
   padding: '0',
   margin: '0',
   zIndex: '1',
+  paddingBottom: '100px',
 
   backdropFilter: 'blur(12px)',
   WebkitBackdropFilter: 'blur(22px)',
@@ -48,6 +53,7 @@ const CenterContainer = styled('div', {
 });
 
 export default function Travel() {
+  const [hasCopied, setHasCopied] = React.useState(false);
   return (
     <>
       <Box css={{ bc: '$elite2' }}>
@@ -81,7 +87,11 @@ export default function Travel() {
                   lineHeight: '2',
                   paddingBottom: '10px',
                   fontSize: '100px',
-
+                  '@md': {
+                    fontFamily: '$brynasBoldCond',
+                    fontSize: '80px',
+                    lineHeight: '1',
+                  },
                   '@sm': {
                     fontFamily: '$brynasBoldCond',
                     fontSize: '80px',
@@ -89,7 +99,7 @@ export default function Travel() {
                   },
                   '@xs': {
                     fontFamily: '$brynasBoldCond',
-                    fontSize: '60px',
+                    fontSize: '56px',
                   },
                 }}
               >
@@ -99,8 +109,6 @@ export default function Travel() {
               <Paragraph
                 size="2"
                 css={{
-                  paddingLeft: '0px',
-                  paddingRight: '0px',
                   paddingTop: '20px',
                   textAlign: 'center',
                   fontSize: '20px',
@@ -108,8 +116,32 @@ export default function Travel() {
                   lineHeight: '1.2',
                   color: '$elite4',
                   mb: '30px',
+                  '@xl': {
+                    paddingLeft: '600px',
+                    paddingRight: '600px',
+                  },
+                  '@lg': {
+                    paddingLeft: '350px',
+                    paddingRight: '350px',
+                  },
+                  '@md': {
+                    lineHeight: '1.2',
+                    paddingLeft: '120px',
+                    paddingRight: '120px',
+                  },
                   '@sm': {
-                    fontSize: '13px',
+                    fontSize: '15px',
+                    fontWeight: '600',
+                    ta: 'center',
+                    mb: '30px',
+                    lineHeight: '1.2',
+                    paddingLeft: '0px',
+                    paddingRight: '0px',
+                    paddingTop: '0',
+                  },
+                  '@xs': {
+                    fontSize: '15px',
+                    fontWeight: '600',
                     ta: 'center',
                     mb: '30px',
                     lineHeight: '1.2',
@@ -119,9 +151,8 @@ export default function Travel() {
                   },
                 }}
               >
-                Book your stay @ <u>Canopy</u> by Hilton Charlotte Southpark.
-                <br />
-                Use promo code <strong>“ISI”</strong> when checking out for a discounted rate of <strong>$139</strong> per night.
+                Book your stay @ <u>Canopy</u> by Hilton Charlotte Southpark. Use promo code <strong>“ISI”</strong> when checking out for a
+                discounted rate of <strong>$139</strong> per night.
               </Paragraph>
 
               <Flex
@@ -129,9 +160,9 @@ export default function Travel() {
                   backgroundColor: '$transparent',
                   zIndex: '2',
                   justifyContent: 'center',
-                  paddingBottom: '40px',
+                  paddingBottom: '0px',
                   '@sm': {
-                    paddingBottom: '30px',
+                    paddingBottom: '0px',
                   },
                 }}
               >
@@ -147,6 +178,58 @@ export default function Travel() {
                   </AtelierButton>
                 </Link>
               </Flex>
+
+              <Container
+                size="1"
+                css={{
+                  paddingTop: '0',
+                  alignItems: 'center',
+                  margin: 'auto',
+                  my: '$6',
+                  position: 'relative',
+                  zIndex: '1',
+                  '@bp2': { my: '$8' },
+                }}
+              >
+                <Flex
+                  css={{
+                    maxWidth: '100%',
+                    boxShadow: 'inset 0 0 0 2px $colors$gray8',
+                    borderRadius: '14px',
+                    fontFamily: '$inter',
+                    fontWeight: '600',
+                    fontSize: '14px',
+                    lineHeight: 1,
+                    ai: 'center',
+                    height: '$7',
+                    color: '$elite4',
+                    backgroundColor: 'rgba(0,0,0,.01)',
+                    px: '$4',
+                    jc: 'space-between',
+                  }}
+                >
+                  <Box>ISI</Box>
+
+                  <IconButton
+                    size="1"
+                    css={{ color: '$slate11', mr: '-$1' }}
+                    aria-label="Copy the install snippet to Clipboard"
+                    onClick={() => {
+                      copy('npm install @stitches/react');
+                      setHasCopied(true);
+                    }}
+                  >
+                    {hasCopied ? <CheckIcon /> : <CopyIcon />}
+                  </IconButton>
+                </Flex>
+              </Container>
+
+              <Heading size="1" css={{ fontSize: '16px', fontWeight: 'bold', color: '$elite4' }}>
+                *PROMO CODE “ISI”
+              </Heading>
+              <Text size="1" css={{ color: '$gray9' }}>
+                Required at checkout
+              </Text>
             </Section>
           </CenterContainer>
 
@@ -166,6 +249,7 @@ export default function Travel() {
           <Container
             size="3"
             css={{
+              paddingBottom: '80px',
               position: 'relative',
               overflowX: 'scroll',
               overflowY: 'hidden',
@@ -183,10 +267,22 @@ export default function Travel() {
           >
             <ImageSlider />
           </Container>
+
+          <Container size="3" css={{ paddingTop: '44px', paddingLeft: '24px', paddingRight: '24px' }}>
+            <Box>
+              <Link
+                href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=CLTPYPY&arrivalDate=2022-10-14&departureDate=2022-10-16&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink"
+                passHref
+              >
+                <Paragraph size="1" css={{ fontSize: '18px', lineHeight: 'normal', fontWeight: '700', textDecoration: 'underline' }}>
+                  Book Now ➔
+                </Paragraph>
+              </Link>
+            </Box>
+          </Container>
         </BackDrop>
-        <Box css={{ position: 'fixed', bottom: '0' }}>
-          <Footer />
-        </Box>
+
+        <Footer />
       </Box>
     </>
   );

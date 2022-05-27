@@ -334,7 +334,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     sm: '(max-width: 750px)',
     md: '(max-width: 1200px)',
     lg: '(max-width: 2000px)',
-    xl: '(max-width: 6000px)',
+    xl: '(max-width: 4000px)',
     motion: '(prefers-reduced-motion)',
     hover: '(any-hover: hover)',
     dark: '(prefers-color-scheme: dark)',
