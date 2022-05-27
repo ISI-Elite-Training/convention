@@ -23,8 +23,9 @@ import { styled } from 'stitches.config';
 
 const BackDrop = styled('div', {
   position: 'relative',
-  minHeight: '100vh',
-  minWidth: '100vw',
+  minHeight: 'calc(100vh - 50px)',
+  // minHeight: '100vh',
+  // minWidth: '100vw',
   backgroundColor: '$elite2',
   padding: '0',
   margin: '0',
@@ -43,6 +44,7 @@ const CenterContainer = styled('div', {
   justifyContent: 'center',
   alignItems: 'center',
   height: 'auto',
+  // minHeight: 'calc(100vh - 50px)',
 });
 
 export default function Travel() {
@@ -61,8 +63,8 @@ export default function Travel() {
               css={{
                 margin: 'auto',
                 textAlign: 'center',
-                paddingTop: '200px',
-                paddingBottom: '100px',
+                paddingTop: '150px',
+                paddingBottom: '80px',
                 '@sm': {
                   paddingTop: '100px',
                   paddingBottom: '60px',
@@ -181,11 +183,10 @@ export default function Travel() {
           >
             <ImageSlider />
           </Container>
-
-          <Box css={{ position: 'absolute', bottom: '0' }}>
-            <Footer />
-          </Box>
         </BackDrop>
+        <Box css={{ position: 'fixed', bottom: '0' }}>
+          <Footer />
+        </Box>
       </Box>
     </>
   );
