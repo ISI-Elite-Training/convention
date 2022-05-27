@@ -18,25 +18,19 @@ const navigation = [
   {
     name: 'AGENDA',
     description: '',
-    href: '/',
+    href: 'https://spaces.isielite.space/PDF/ISI%C2%AEEliteTraining_ConventionAgenda.pdf',
     // icon: IconOne,
   },
   {
     name: 'TRAVEL',
     description: '',
-    href: '/',
+    href: '/travel',
     // icon: IconTwo,
   },
   {
     name: 'REGISTER NOW',
     description: '',
-    href: '/',
-    // icon: IconThree,
-  },
-  {
-    name: 'Travel',
-    description: '',
-    href: '/',
+    href: 'https://www.eventbrite.com/e/342275965627',
     // icon: IconThree,
   },
 ];

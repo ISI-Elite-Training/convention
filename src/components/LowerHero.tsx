@@ -119,7 +119,7 @@ export const LowerHero = () => {
                 },
               }}
             >
-              <Link href="https://eventbrite.com" passHref>
+              <Link href="https://www.eventbrite.com/e/342275965627" passHref>
                 <AtelierButton color="white">
                   REGISTER NOW
                   <Box css={{ marginLeft: '4px' }}>

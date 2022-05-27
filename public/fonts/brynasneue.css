@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Brynas Neue 1912 Bold Condensed';
+  src: url('/fonts/brynas-neue/BrynasNeue1912-BoldCond.eot');
+  src: local('Brynas Neue 1912 Bold Condensed'), local('BrynasNeue1912-BoldCond'),
+    url('/fonts/brynas-neue/BrynasNeue1912-BoldCond.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/brynas-neue/BrynasNeue1912-BoldCond.woff2') format('woff2'),
+    url('/fonts/brynas-neue/BrynasNeue1912-BoldCond.woff') format('woff'),
+    url('/fonts/brynas-neue/BrynasNeue1912-BoldCond.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brynas Neue 1912';
+  src: url('/fonts/brynas-neue/BrynasNeue1912-Bold.eot');
+  src: local('Brynas Neue 1912 Bold'), local('BrynasNeue1912-Bold'),
+    url('/fonts/BrynasNeue1912-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/brynas-neue/BrynasNeue1912-Bold.woff2') format('woff2'), url('/fonts/brynas-neue/BrynasNeue1912-Bold.woff') format('woff'),
+    url('/fonts/brynas-neue/BrynasNeue1912-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brynas Neue 1912 Bold Condensed';
+  src: url('/fonts/brynas-neue/BrynasNeue1912-BoldCondSlanted.eot');
+  src: local('Brynas Neue 1912 Bold Condensed Slanted'), local('BrynasNeue1912-BoldCondSlanted'),
+    url('/fonts/brynas-neue/BrynasNeue1912-BoldCondSlanted.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/brynas-neue/BrynasNeue1912-BoldCondSlanted.woff2') format('woff2'),
+    url('/fonts/brynas-neue/BrynasNeue1912-BoldCondSlanted.woff') format('woff'),
+    url('/fonts/brynas-neue/BrynasNeue1912-BoldCondSlanted.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brynas Neue 1912 Black Wide';
+  src: url('/fonts/brynas-neue/BrynasNeue1912-BlackWide.eot');
+  src: local('Brynas Neue 1912 Black Wide'), local('BrynasNeue1912-BlackWide'),
+    url('/fonts/brynas-neue/BrynasNeue1912-BlackWide.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/brynas-neue/BrynasNeue1912-BlackWide.woff2') format('woff2'),
+    url('/fonts/brynas-neue/BrynasNeue1912-BlackWide.woff') format('woff'),
+    url('/fonts/brynas-neue/BrynasNeue1912-BlackWide.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brynas Neue 1912';
+  src: url('/fonts/brynas-neue/BrynasNeue1912.eot');
+  src: local('Brynas Neue 1912'), local('BrynasNeue1912'), url('/fonts/BrynasNeue1912.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/brynas-neue/BrynasNeue1912.woff2') format('woff2'), url('/fonts/brynas-neue/BrynasNeue1912.woff') format('woff'),
+    url('/fonts/brynas-neue/BrynasNeue1912.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

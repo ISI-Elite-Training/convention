@@ -13,29 +13,17 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
-          <link rel="preload" href="https://spaces.isielite.space/assets/style/inter.css" as="style" crossOrigin="anonymous" />
-          <link rel="preload" href="https://spaces.isielite.space/fonts/brynasneue.css" as="style" crossOrigin="anonymous" />
+          <link rel="preload" href="/fonts/brynasneue.css" as="style" crossOrigin="anonymous" />
+          <link rel="preload" href="/fonts/inter.css" as="style" crossOrigin="anonymous" />
           <link
             rel="preload"
-            href="https://spaces.isielite.space/fonts/brynas-neue/BrynasNeue1912-BlackWide.woff2"
+            href="/fonts/brynas-neue/BrynasNeue1912-BlackWide.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
-          <link
-            rel="preload"
-            href="https://spaces.isielite.space/fonts/brynas-neue/BrynasNeue1912-Bold.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="https://spaces.isielite.space/fonts/brynas-neue/BrynasNeue1912-BoldCond.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
+          <link rel="preload" href="/fonts/brynas-neue/BrynasNeue1912-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="/fonts/brynas-neue/BrynasNeue1912-BoldCond.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 
           <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png" />
           <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png" />
