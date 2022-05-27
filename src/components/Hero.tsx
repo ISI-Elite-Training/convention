@@ -140,7 +140,8 @@ export const Hero = () => {
             }}
           >
             Join us for our ISI® Elite Training Annual Convention as we come together from coast to coast and recognize the incredible
-            individuals within our brand, celebrate our accomplishments, learn from experts in the field, and cast our vision to the future.
+            individuals within our brand, celebrate our accomplishments, learn from experts in the field, and cast our vision for the
+            future.
           </Paragraph>
 
           <Flex
@@ -156,13 +157,6 @@ export const Hero = () => {
             <Link href="https://spaces.isielite.space/PDF/ISI%C2%AEEliteTraining_ConventionAgenda.pdf" passHref>
               <AtelierButton color="lime">AGENDA {` `}→</AtelierButton>
             </Link>
-            {/* <!--
-            <Link href="https://github.com/AtelierDesign/atelier" passHref>
-              <AtelierButton color="ghost">
-                <span>Learn more →</span>
-              </AtelierButton>
-            </Link>
-            --> */}
           </Flex>
         </Container>
       </Section>
