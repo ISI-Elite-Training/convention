@@ -139,27 +139,9 @@ export const CaseStudiesLight = () => {
         }}
       >
         <Grid flow="column" align="center" justify="start" gap="6">
-          <NextLink href="/case-studies/atom-learning" passHref>
-            <LogoLink>
-              <CaseStudyLogo variant="Atelier" width="135" />
-            </LogoLink>
-          </NextLink>
-
           <NextLink href="https://inbodyusa.com" passHref>
             <LogoLink>
               <CaseStudyLogo variant="InBody" width="125" />
-            </LogoLink>
-          </NextLink>
-
-          <NextLink href="/case-studies/basement-studio" passHref>
-            <LogoLink css={{ mb: -6 }}>
-              <CaseStudyLogo variant="basement.studio" width="135" />
-            </LogoLink>
-          </NextLink>
-
-          <NextLink href="/case-studies/linear" passHref>
-            <LogoLink>
-              <CaseStudyLogo variant="Linear" width="135" />
             </LogoLink>
           </NextLink>
 

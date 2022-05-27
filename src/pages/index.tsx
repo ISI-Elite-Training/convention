@@ -61,7 +61,10 @@ export default function Home() {
           <CenterContainer>
             <Container size="3" css={{ zIndex: '9999', alignItems: 'center', textAlign: 'center' }}>
               <Image src={conventionLogo} width="450" height="170" alt="CONVENTION" />
-              <Heading size="3" css={{ fontFamily: '$brynas', color: '$elite4', paddingTop: '0px', paddingBottom: '0px' }}>
+              <Heading
+                size="3"
+                css={{ fontFamily: '$brynas', color: '$elite4', paddingTop: '0px', paddingBottom: '0px', '@sm': { fontSize: '22px' } }}
+              >
                 OCTOBER 14 - 16, 2022
               </Heading>
               <Heading
@@ -73,7 +76,11 @@ export default function Home() {
                   paddingTop: '8px',
                   paddingBottom: '30px',
                   lineHeight: 'normal',
-                  //textTransform: 'uppercase',
+
+                  '@sm': {
+                    paddingTop: '0',
+                    fontSize: '14px',
+                  },
                 }}
               >
                 CHARLOTTE, NC

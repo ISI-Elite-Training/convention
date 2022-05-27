@@ -3,7 +3,7 @@ import { styled } from 'stitches.config';
 export const LogoLink = styled('a', {
   display: 'block',
   outline: 0,
-  color: '$hiContrast',
+  color: '$elite2',
   position: 'relative',
 
   '@hover': {
@@ -16,8 +16,8 @@ export const LogoLink = styled('a', {
 
   '&:focus': {
     zIndex: 1,
-    color: '$hiContrast',
-    boxShadow: '0 0 0 2px $colors$blue8',
+    color: '$elite2',
+    boxShadow: '0 0 0 2px $colors$elite4',
   },
   '&:focus:not(:focus-visible)': {
     boxShadow: 'none',

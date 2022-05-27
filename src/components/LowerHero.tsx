@@ -9,7 +9,7 @@ import { Heading } from '@/system/heading';
 import { Flex } from '@/system/flex';
 import { Paragraph } from '@/system/paragraph';
 
-import { ExternalLinkIcon, RocketIcon } from '@radix-ui/react-icons';
+import { ExternalLinkIcon, RocketIcon, CaretRightIcon } from '@radix-ui/react-icons';
 import { AtelierButton } from '@/system/custom/AtelierButton';
 import { GradientButton } from '@/system/custom/AtelierButton';
 import { TimeCode } from '@/components/TimeCode';
@@ -34,8 +34,8 @@ export const LowerHero = () => {
               backgroundColor: '$elite1',
               paddingTop: '50px',
               paddingBottom: '10px',
-              paddingLeft: '150px',
-              paddingRight: '150px',
+              paddingLeft: '0px',
+              paddingRight: '0px',
               '@sm': {
                 paddingTop: '20px',
                 paddingBottom: '30px',
@@ -59,10 +59,20 @@ export const LowerHero = () => {
                 css={{
                   color: '$elite4',
                   fontFamily: '$brynas',
-                  fontWeight: '900',
+                  fontWeight: '600',
                   letterSpacing: 'normal',
                   lineHeight: '1.5',
                   paddingBottom: '10px',
+
+                  '@sm': {
+                    fontFamily: '$brynasBoldCond',
+                    fontSize: '80px',
+                    lineHeight: '1',
+                  },
+                  '@xs': {
+                    fontFamily: '$brynasBoldCond',
+                    fontSize: '60px',
+                  },
                 }}
               >
                 TEAM ON THREE!
@@ -76,24 +86,26 @@ export const LowerHero = () => {
                 textAlign: 'center',
                 fontSize: '20px',
                 fontWeight: '700',
-                lineHeight: '1.4',
+                lineHeight: '1.2',
                 color: '$white',
                 mb: '30px',
                 '@bp2': {
                   // mx: 250,
                   ta: 'center',
                   mb: '30px',
-                  lineHeight: '1.3',
+                  lineHeight: '1.2',
                 },
                 '@sm': {
                   fontSize: '16px',
                   ta: 'center',
                   mb: '30px',
-                  lineHeight: '0',
+                  lineHeight: '1.2',
+                  paddingLeft: '20px',
+                  paddingRight: '20px',
                 },
               }}
             >
-              Get ready to Train for Life, see you in the Queen City!
+              Get ready to <em>Train for Life</em>©, see you in the Queen City!
             </Paragraph>
 
             <Flex
@@ -109,9 +121,10 @@ export const LowerHero = () => {
             >
               <Link href="https://eventbrite.com" passHref>
                 <AtelierButton color="white">
-                  REGISTER NOW {` `}
-                  {` `}
-                  <ExternalLinkIcon />
+                  REGISTER NOW
+                  <Box css={{ marginLeft: '4px' }}>
+                    <CaretRightIcon />
+                  </Box>
                 </AtelierButton>
               </Link>
             </Flex>

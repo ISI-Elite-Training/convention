@@ -119,7 +119,7 @@ export const Hero = () => {
               fontSize: '18px',
               fontWeight: '500',
               lineHeight: '1.4',
-              color: '$gray9',
+              color: '$gray11',
               mb: '30px',
               '@sm': {
                 textAlign: 'left',
@@ -153,12 +153,8 @@ export const Hero = () => {
               },
             }}
           >
-            <Link href="/shop" passHref>
-              <AtelierButton color="lime">
-                AGENDA {` `}
-                {` `}
-                <ExternalLinkIcon />
-              </AtelierButton>
+            <Link href="https://spaces.isielite.space/PDF/ISI%C2%AEEliteTraining_ConventionAgenda.pdf" passHref>
+              <AtelierButton color="lime">AGENDA {` `}→</AtelierButton>
             </Link>
             {/* <!--
             <Link href="https://github.com/AtelierDesign/atelier" passHref>
