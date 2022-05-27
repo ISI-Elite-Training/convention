@@ -24,7 +24,7 @@ const navigation = [
   {
     name: 'TRAVEL',
     description: '',
-    href: '/travel',
+    href: 'https://convention.isielitetraining.com/travel',
     // icon: IconTwo,
   },
   {
@@ -100,7 +100,7 @@ const MenuBox = styled('div', {
 });
 
 // MENU LINK STYLING
-const MenuLink = styled('div', {
+const MenuLink = styled('a', {
   fontSize: '38px',
   fontFamily: '$brynasBoldCond',
   fontWeight: '700',

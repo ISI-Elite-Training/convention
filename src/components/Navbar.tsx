@@ -69,6 +69,7 @@ export const Navbar = () => {
             <Image src={brandLogo} width="200px" height="50px" alt="ISI® Elite Training" />
           </Box>
         </Link>
+
         <Box
           as="a"
           css={{
@@ -104,7 +105,9 @@ export const Navbar = () => {
             },
           }}
         >
-          <Image src={brandLogo} width="160px" height="50px" alt="ISI® Elite Training" />
+          <Link href="/" passHref>
+            <Image src={brandLogo} width="160px" height="50px" alt="ISI® Elite Training" />
+          </Link>
         </Box>
 
         {/* <!-- Nav Link #1 --> */}
