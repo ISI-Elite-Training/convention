@@ -199,8 +199,8 @@ export const SpeakerCardFull = () => {
           </SpeakerCard>
         </Grid>
 
-        <Text variant="gray" css={{ mb: '$3' }}>
-          <NextLink href="/case-studies" passHref>
+        <Text variant="gray" css={{ marginBottom: '25px' }}>
+          <NextLink href="/" passHref>
             <CustomLink variant="subtle" css={{ display: 'inline-flex', alignItems: 'center', color: '$gray7', fontWeight: '600' }}>
               Sponsors
               <ArrowRightIcon />
