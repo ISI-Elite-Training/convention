@@ -44,7 +44,7 @@ export const HeaderNav = () => {
       </Link>
 
       {/* <!-- Nav Link #4 --> */}
-      <Link href="/travel" passHref>
+      <Link href="https://www.eventbrite.com/e/342275965627" passHref>
         <NewLink
           variant="subtle"
           css={{

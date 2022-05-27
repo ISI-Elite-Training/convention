@@ -87,7 +87,7 @@ export default function Home() {
               </Heading>
             </Container>
             <Container size="3">
-              <Link href="https://eventbrite.com" passHref target="_blank" rel="no refferrer">
+              <Link href="https://www.eventbrite.com/e/342275965627" passHref target="_blank" rel="no refferrer">
                 <AtelierButton color="elite">REGISTER NOW →</AtelierButton>
               </Link>
             </Container>
