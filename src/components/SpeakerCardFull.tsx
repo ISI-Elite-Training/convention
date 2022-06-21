@@ -234,6 +234,18 @@ export const SpeakerCardFull = () => {
             </LogoLink>
           </NextLink>
 
+          <NextLink href="https://www.adp.com" passHref>
+            <LogoLink>
+              <CaseStudyLogo variant="ADP" width="120" />
+            </LogoLink>
+          </NextLink>
+
+          <NextLink href="https://www.concept2.com" passHref>
+            <LogoLink>
+              <CaseStudyLogo variant="Concept2" width="130" />
+            </LogoLink>
+          </NextLink>
+
           {/* Horizontal scroll spacer */}
           <Box css={{ width: 1, height: 1 }} />
         </Grid>

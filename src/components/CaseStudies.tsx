@@ -42,7 +42,7 @@ export const CaseStudies = () => {
           <Card variant="interactive" as="a" href="/case-studies/vercel">
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
-                <CaseStudyLogo variant="Vercel" />
+                <CaseStudyLogo variant="Atelier" />
               </Box>
               <TestimonialText css={{ mb: '$4' }}>
                 We’ve been able to focus on building solid user experiences on top of Radix Primitives. With UI components, there are just
@@ -59,7 +59,7 @@ export const CaseStudies = () => {
           <Card variant="interactive" as="a" href="/case-studies/codesandbox">
             <Box css={{ p: '$5' }}>
               <Box css={{ mb: '$4' }}>
-                <CaseStudyLogo variant="CodeSandbox" />
+                <CaseStudyLogo variant="Atelier" />
               </Box>
               <TestimonialText css={{ mb: '$4' }}>
                 Radix has significantly improved the accessibility standard in our components. We spend far less time discussing and
@@ -106,43 +106,19 @@ export const CaseStudies = () => {
         <Grid flow="column" align="center" justify="start" gap="6">
           <NextLink href="/case-studies/atom-learning" passHref>
             <LogoLink>
-              <CaseStudyLogo variant="Atom Learning" width="86" />
+              <CaseStudyLogo variant="InBody" width="86" />
             </LogoLink>
           </NextLink>
 
-          <NextLink href="/case-studies/basedash" passHref>
+          <NextLink href="https://www.adp.com" passHref>
             <LogoLink>
-              <CaseStudyLogo variant="Basedash" width="135" />
+              <CaseStudyLogo variant="ADP" width="125" />
             </LogoLink>
           </NextLink>
 
-          <NextLink href="/case-studies/basement-studio" passHref>
-            <LogoLink css={{ mb: -6 }}>
-              <CaseStudyLogo variant="basement.studio" width="120" />
-            </LogoLink>
-          </NextLink>
-
-          <NextLink href="/case-studies/linear" passHref>
+          <NextLink href="https://www.concept2.com" passHref>
             <LogoLink>
-              <CaseStudyLogo variant="Linear" width="105" />
-            </LogoLink>
-          </NextLink>
-
-          <NextLink href="/case-studies/liveblocks" passHref>
-            <LogoLink css={{ mb: -3 }}>
-              <CaseStudyLogo variant="Liveblocks" width="135" />
-            </LogoLink>
-          </NextLink>
-
-          <NextLink href="/case-studies/supabase" passHref>
-            <LogoLink css={{ mb: -2 }}>
-              <CaseStudyLogo variant="Supabase" width="140" />
-            </LogoLink>
-          </NextLink>
-
-          <NextLink href="/case-studies/university-of-amsterdam" passHref>
-            <LogoLink css={{ mt: 2 }}>
-              <CaseStudyLogo variant="University of Amsterdam" width="152" />
+              <CaseStudyLogo variant="Concept2" width="125" />
             </LogoLink>
           </NextLink>
 
