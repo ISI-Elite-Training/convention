@@ -18,7 +18,7 @@ const navigation = [
   {
     name: 'AGENDA',
     description: '',
-    href: 'https://spaces.isielite.space/PDF/ISI%C2%AEEliteTraining_ConventionAgenda.pdf',
+    href: 'https://spaces.isielite.space/PDF/ISI_EliteTraining_ConventionAgenda.pdf',
     // icon: IconOne,
   },
   {

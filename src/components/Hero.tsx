@@ -154,7 +154,7 @@ export const Hero = () => {
               },
             }}
           >
-            <Link href="https://spaces.isielite.space/PDF/ISI%C2%AEEliteTraining_ConventionAgenda.pdf" passHref>
+            <Link href="https://spaces.isielite.space/PDF/ISI_EliteTraining_ConventionAgenda.pdf" passHref>
               <AtelierButton color="lime">AGENDA {` `}→</AtelierButton>
             </Link>
           </Flex>

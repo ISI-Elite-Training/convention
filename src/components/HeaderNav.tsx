@@ -5,7 +5,7 @@ import { NewLink } from '@/system/newlink';
 export const HeaderNav = () => {
   return (
     <>
-      <Link href="https://spaces.isielite.space/PDF/ISI%C2%AEEliteTraining_ConventionAgenda.pdf" passHref>
+      <Link href="https://spaces.isielite.space/PDF/ISI_EliteTraining_ConventionAgenda.pdf" passHref>
         <NewLink
           variant="subtle"
           css={{
