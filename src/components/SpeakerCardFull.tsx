@@ -230,19 +230,31 @@ export const SpeakerCardFull = () => {
         <Grid flow="column" align="center" justify="start" gap="6">
           <NextLink href="https://inbodyusa.com" passHref>
             <LogoLink>
-              <CaseStudyLogo variant="InBody" width="125" />
+              <CaseStudyLogo variant="InBody" width="95" />
             </LogoLink>
           </NextLink>
 
           <NextLink href="https://www.adp.com" passHref>
             <LogoLink>
-              <CaseStudyLogo variant="ADP" width="120" />
+              <CaseStudyLogo variant="ADP" width="60" />
             </LogoLink>
           </NextLink>
 
           <NextLink href="https://www.concept2.com" passHref>
             <LogoLink>
               <CaseStudyLogo variant="Concept2" width="130" />
+            </LogoLink>
+          </NextLink>
+
+          <NextLink href="https://www.concept2.com" passHref>
+            <LogoLink>
+              <CaseStudyLogo variant="Morrow Hill" width="130" />
+            </LogoLink>
+          </NextLink>
+
+          <NextLink href="https://www.concept2.com" passHref>
+            <LogoLink>
+              <CaseStudyLogo variant="Gym Supps" width="120" />
             </LogoLink>
           </NextLink>
 

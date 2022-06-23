@@ -1,12 +1,12 @@
 import React from 'react';
 
-export type CaseStudyLogoVariant = 'Atelier' | 'InBody' | 'Morrow Hill' | 'ADP' | 'Concept2' | 'Gym Supps';
+export type ProjectLogoVariant = 'Atelier' | 'InBody' | 'Morrow Hill' | 'ADP' | 'Concept2' | 'Gym Supps';
 
-type CaseStudyLogoProps = React.ComponentProps<'svg'> & {
-  variant: CaseStudyLogoVariant;
+type ProjectLogoProps = React.ComponentProps<'svg'> & {
+  variant: ProjectLogoVariant;
 };
 
-export const CaseStudyLogo = ({ variant, ...props }: CaseStudyLogoProps) => {
+export const ProjectLogo = ({ variant, ...props }: ProjectLogoProps) => {
   if (variant === 'Atelier') {
     return (
       <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 20" width="170" {...props}>
