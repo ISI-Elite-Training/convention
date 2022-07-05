@@ -33,6 +33,11 @@ const navigation = [
     href: 'https://www.eventbrite.com/e/342275965627',
     // icon: IconThree,
   },
+  {
+    name: 'OUR SPONSORS',
+    description: '',
+    href: '/sponsors',
+  },
 ];
 
 // SubMenu ( Map )...
@@ -105,7 +110,7 @@ const MenuLink = styled('a', {
   fontFamily: '$brynasBoldCond',
   fontWeight: '700',
   color: '$slate1',
-  lineHeight: '1',
+  lineHeight: '30px',
   letterSpacing: '-0.03rem',
   marginTop: '5px',
   marginBottom: '5px',

@@ -1,11 +1,13 @@
 import React from 'react';
 import { Container, Section, Grid, Heading } from '@/system';
-import { ProjectLogoBox } from '@/components/ProjectLogoBox';
-import { ProjectLogo } from '@/components/ProjectLogo';
+import { Navbar } from '@/components/Navbar';
+import { SponsorLogoBox } from '@/components/SponsorLogoBox';
+import { SponsorLogo } from '@/components/SponsorLogo';
 
 const Sponsors = () => {
   return (
     <>
+      <Navbar />
       <Container css={{ paddingTop: '100px', paddingBottom: '0px' }} size={{ '@initial': 2, '@bp2': 3 }}>
         <Heading size="3" css={{ fontFamily: '$inter', fontWeight: '700', textAlign: 'center' }}>
           Thank you to our sponsors.
@@ -19,25 +21,33 @@ const Sponsors = () => {
             columns={{ '@initial': 1, '@bp1': 2, '@bp2': 3 }}
             css={{ gap: '8px', placeItems: 'stretch', gridAutoRows: '200px', mb: '$8' }}
           >
-            <ProjectLogoBox title="InBody®" href="">
-              <ProjectLogo variant="InBody" />
-            </ProjectLogoBox>
+            <SponsorLogoBox title="InBody®" href="https://inbodyusa.com">
+              <SponsorLogo variant="InBody" />
+            </SponsorLogoBox>
 
-            <ProjectLogoBox title="ADP®" href="https://ady.world">
-              <ProjectLogo variant="ADP" />
-            </ProjectLogoBox>
+            <SponsorLogoBox title="ADP®" href="https://www.adp.com">
+              <SponsorLogo variant="ADP" />
+            </SponsorLogoBox>
 
-            <ProjectLogoBox title="Morrow Hill" href="https://ady.world">
-              <ProjectLogo variant="Morrow Hill" />
-            </ProjectLogoBox>
+            <SponsorLogoBox title="Rep'M Group" href="https://www.repmgroup.com">
+              <SponsorLogo variant="RepM" />
+            </SponsorLogoBox>
 
-            <ProjectLogoBox title="Concept2" href="https://ady.world">
-              <ProjectLogo variant="Concept2" />
-            </ProjectLogoBox>
+            <SponsorLogoBox title="Mariana Tek" href="https://marianatek.com">
+              <SponsorLogo variant="Mariana Tek" />
+            </SponsorLogoBox>
 
-            <ProjectLogoBox title="Gym Supps" href="https://ady.world">
-              <ProjectLogo variant="Gym Supps" />
-            </ProjectLogoBox>
+            <SponsorLogoBox title="Morrow Hill" href="https://www.morrowhill.com">
+              <SponsorLogo variant="Morrow Hill" />
+            </SponsorLogoBox>
+
+            <SponsorLogoBox title="Concept2" href="https://www.concept2.com">
+              <SponsorLogo variant="Concept2" />
+            </SponsorLogoBox>
+
+            <SponsorLogoBox title="Gym Supps" href="https://gymsupps.org">
+              <SponsorLogo variant="Gym Supps" />
+            </SponsorLogoBox>
           </Grid>
         </Section>
       </Container>

@@ -200,7 +200,7 @@ export const SpeakerCardFull = () => {
         </Grid>
 
         <Text variant="gray" css={{ marginBottom: '25px' }}>
-          <NextLink href="/" passHref>
+          <NextLink href="/sponsors" passHref>
             <CustomLink variant="subtle" css={{ display: 'inline-flex', alignItems: 'center', color: '$gray7', fontWeight: '600' }}>
               Sponsors
               <ArrowRightIcon />
@@ -227,34 +227,46 @@ export const SpeakerCardFull = () => {
           my: '-$3',
         }}
       >
-        <Grid flow="column" align="center" justify="start" gap="6">
-          <NextLink href="https://inbodyusa.com" passHref>
-            <LogoLink>
-              <CaseStudyLogo variant="InBody" width="95" />
+        <Grid flow="column" align="center" justify="start" gap="4">
+          <NextLink href="https://inbodyusa.com" target="_blank" rel="noreferrer noopener" passHref>
+            <LogoLink target="_blank" rel="noreferrer noopener">
+              <CaseStudyLogo variant="InBody" width="100" />
             </LogoLink>
           </NextLink>
 
           <NextLink href="https://www.adp.com" passHref>
-            <LogoLink>
+            <LogoLink target="_blank" rel="noreferrer noopener">
               <CaseStudyLogo variant="ADP" width="60" />
             </LogoLink>
           </NextLink>
 
-          <NextLink href="https://www.concept2.com" passHref>
-            <LogoLink>
+          <NextLink href="https://www.repmgroup.com" target="_blank" rel="noreferrer noopener" passHref>
+            <LogoLink target="_blank" rel="noreferrer noopener">
+              <CaseStudyLogo variant="RepM" width="80" />
+            </LogoLink>
+          </NextLink>
+
+          <NextLink href="https://marianatek.com" target="_blank" rel="noreferrer noopener" passHref>
+            <LogoLink target="_blank" rel="noreferrer noopener">
+              <CaseStudyLogo variant="Mariana Tek" width="140" />
+            </LogoLink>
+          </NextLink>
+
+          <NextLink href="https://www.concept2.com" target="_blank" rel="noreferrer noopener" passHref>
+            <LogoLink target="_blank" rel="noreferrer noopener">
               <CaseStudyLogo variant="Concept2" width="130" />
             </LogoLink>
           </NextLink>
 
-          <NextLink href="https://www.concept2.com" passHref>
-            <LogoLink>
+          <NextLink href="https://www.morrowhill.com" target="_blank" rel="noreferrer noopener" passHref>
+            <LogoLink target="_blank" rel="noreferrer noopener">
               <CaseStudyLogo variant="Morrow Hill" width="130" />
             </LogoLink>
           </NextLink>
 
-          <NextLink href="https://www.concept2.com" passHref>
-            <LogoLink>
-              <CaseStudyLogo variant="Gym Supps" width="120" />
+          <NextLink href="https://gymsupps.org" target="_blank" rel="noreferrer noopener" passHref>
+            <LogoLink target="_blank" rel="noreferrer noopener">
+              <CaseStudyLogo variant="Gym Supps" width="100" />
             </LogoLink>
           </NextLink>
 
