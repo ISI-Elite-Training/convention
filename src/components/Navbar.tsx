@@ -29,12 +29,16 @@ export const Navbar = () => {
           margin: '0',
           width: '100vw',
           zIndex: '9999',
-          // backgroundColor: '$gray12',
-
-          backgroundColor: '$light50',
-          backdropFilter: 'blur(12px)',
-          WebkitBackdropFilter: 'blur(12px)',
-          saturate: '200%',
+          border: '1px solid $mauve6',
+          borderTopwidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderBottomWidth: '1px',
+          // background: 'transparent',
+          backgroundColor: '$light100',
+          backdropFilter: 'saturate(180%) blur(12px)',
+          WebkitBackdropFilter: 'saturate(180%) blur(12px)',
+          // saturate: '200%',
         }}
       >
         {/* <!-- LOGO SECTION --> */}

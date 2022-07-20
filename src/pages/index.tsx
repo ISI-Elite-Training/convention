@@ -24,13 +24,14 @@ const BackDrop = styled('div', {
   position: 'relative',
   minHeight: '100vh',
   minWidth: '100vw',
-  backgroundColor: '$sage3',
+  backgroundColor: '$light50',
+  background: '$light50',
   padding: '0',
   margin: '0',
   zIndex: '1',
 
-  backdropFilter: 'blur(12px)',
-  WebkitBackdropFilter: 'blur(22px)',
+  backdropFilter: 'saturate(180%) blur(22px)',
+  WebkitBackdropFilter: 'saturate(180%) blur(22px)',
   // saturate: '200%',
 });
 
